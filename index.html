@@ -6,7 +6,82 @@
 
     <link rel="icon" type="img/x-icon" href="assets/icons/Logo.png">
 
+    <!--Normalize-->
+    <link rel="stylesheet" href="assets/style/normalize.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+
     <style>
+
+        /*---------------------------- Navigation ----------------------------*/
+
+        /*--Sticky box--*/
+        #stickyMain{
+            /*border:2px solid red ;*/
+        }
+
+        /*--Navigation box--*/
+        header{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+
+            position: sticky;
+            top: 0;
+        }
+
+        /*--Logo--*/
+        header>div>img{
+            position: absolute;
+            margin: 2px;
+            top: 12px;
+        }
+
+        /*--Links--*/
+        header>nav>a{
+            text-decoration: none;
+            color: white;
+            font-family: "Francois One", sans-serif;
+
+            position: absolute;
+            top: 32px;
+        }
+
+        header>nav>a:first-child{
+            right: 790px
+        }
+        header>nav>a:nth-child(2){
+            right: 705px;
+        }
+        header>nav>a:nth-child(3){
+            right: 605px;
+        }
+        header>nav>a:nth-child(4){
+            right: 530px;
+        }
+        header>nav>a:nth-child(5){
+            right: 410px;
+        }
+        header>nav>a:nth-child(6){
+            right: 320px;
+        }
+        header>nav>a:nth-child(7){
+            right: 225px;
+        }
+        header>nav>a:nth-child(8){
+            right: 110px;
+        }
+        header>nav>a:nth-child(9){
+            right: 20px;
+        }
+
+        /*--Links Hover--*/
+        header>nav>a:hover{
+            color: #50DBEE;
+        }
 
 
     </style>
@@ -16,10 +91,12 @@
 
 <!----------------------------- Navigation ----------------------------->
 
+<!--Sticky start main-->
+<main id="stickyMain">
 <header>
     <!--Logo-->
     <div>
-        <img src="assets/icons/Logo.png" title="Logo" alt="Logo">
+        <img src="assets/icons/Logo.png" title="Logo" alt="Logo" width="55px">
     </div>
 
     <!--Navigation Menu-->
@@ -752,7 +829,8 @@
 
 </main>
 
-
+<!--Stick End Main-->
+</main>
 
 <!----------------------------- Footer ----------------------------->
 
