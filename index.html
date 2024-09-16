@@ -82,82 +82,80 @@
         }
 
 
-        /*----------------------------- Home -----------------------------*/
-        #mountain{
+
+        /*---------------------------- Paralax Scene ----------------------------*/
+
+        #ParalaxScene>div{
             width: 100%;
-            height: 612px;
-            opacity: 0.7;
+            height: 1400px;
         }
-
-        #homeMain{
+        #stickyMountain {
             background-color: black;
-            height: 612px;
-
-            position: relative;
+            position: sticky;
+            top: 0;
 
             z-index: -1;
         }
 
-        /*My Info*/
-        #myinfoHome{
-            height: 300px;
-            width: 600px;
+        /*#ParalaxScene>div>img:nth-child(2) {
+            transition: transform 0.1s ease-out;
+            z-index: -1;
+            position: fixed;
+            top: 14px;
+        }*/
 
+
+
+        /*----------------------------- Home -----------------------------*/
+        #homeMain{
+            width: 100%;
+            position: relative;
+            border: 2px solid red;
+        }
+
+        /*Welcome*/
+        #homeMain>section{
+            font-family: "Francois One", sans-serif;
+            font-size: 40px;
+
+            color: #50DBEE;
             text-align: center;
 
             position: absolute;
-            top: 230px;
-            left: 150px;
+            top: 400px;
+            left: 400px;
 
+            z-index: -2;
         }
-        #myinfoHome>div:first-child{
-            color: white;
+
+        #homeMain>section>div:nth-child(2){
+            font-size: 96px;
+        }
+
+
+        /*My-Info*/
+        #homeMain>div:nth-child(2){
             font-size: 55px;
-        }
-
-        #myinfoHome>div:nth-child(2){
             color: white;
-            font-size: 26px;
-
-            position: relative;
-            top: 20px;
-        }
-
-        /*Hire me btn*/
-        #myinfoHome>button{
-            width: 150px;
-            height: 30px;
-            background: rgba(0, 0, 0, 0.3);
-            color: #00F0FF;
-            font-size: 14px;
-
-            border: 2px solid #00F0FF;
-            border-radius: 20px;
-
-            position: relative;
-            top: 50px;
-        }
-
-        /*My Image*/
-        #homeMain>div>img:first-child{
-            width: 400px;
+            text-align: center;
 
             position: absolute;
-            bottom: 0;
-            right: 0;
+            top: 750px;
+            left: 400px;
+
+            z-index: -2;
         }
-        #homeMain>div>img:nth-child(2){
+
+
+        /*My-Image*/
+        #homeMain>div>img{
             position: absolute;
-            bottom: 0;
+            top: 500px;
             right: 0;
+
+
+            z-index: -2;
         }
-
-
-
-
-
-
-
     </style>
 
 </head>
@@ -167,761 +165,752 @@
 
 <!--Sticky start main-->
 <main id="stickyMainHeader">
-<header>
-    <!--Logo-->
-    <div>
-        <img src="assets/icons/Logo.png" title="Logo" alt="Logo" width="55px">
-    </div>
-
-    <!--Navigation Menu-->
-    <nav>
-        <a href="">Home</a>
-        <a href="">Gallery</a>
-        <a href="">Education</a>
-        <a href="">Skills</a>
-        <a href="">Assignments</a>
-        <a href="">Projects</a>
-        <a href="">YouTube</a>
-        <a href="">Photography</a>
-        <a href="">Hire Me</a>
-    </nav>
-</header>
-
-
-<!---------------------Paralax Scene------------------------------>
-<!--<main id="ParalaxScene">
-    <div>
-        <img src="assets/mountain.png" width="100%">
-        <img src="assets/m_2.png" width="100%">
-    </div>
-
-</main>-->
-
-
-<!----------------------------- Home ----------------------------->
-
-<!--Hero Section-->
-<main id="homeMain">
-    <!--Background image-->
-    <img id="mountain" src="assets/mountain.png">
-
-
-    <!--Welcome-->
-    <section>
-        <div>Welcome to My Portfolio</div>
-        <div>Dion Fernando</div>
-    </section>
-
-    <!--My Info-->
-    <section id="myinfoHome">
-        <div>Hey! I'm Dion Fernando</div>
-        <div>Developer | UI UX Designer | YouTuber | Photographer</div>
-        <button>Hire Me</button>
-    </section>
-
-    <!--Website Links-->
-    <img src="assets/icons/insta.png" title="Instagram" alt="Instagram">
-    <img src="assets/icons/facebook.png" title="Facebook" alt="Facebook">
-    <img src="assets/icons/twitter.png" title="Twitter" alt="Twitter">
-    <img src="assets/icons/likedin.png" title="LinkedIn" alt="LinkedIn">
-    <img src="assets/icons/github.png" title="GitHub" alt="GitHub">
-
-    <br>
-
-    <!--My Image-->
-    <div>
-        <img src="assets/Blast.png" alt="Blast img">
-        <img src="assets/my-images/img1.png" title="Dion" alt="Dion.img">
-    </div>
-</main>
-
-
-
-
-<!----------------------------- About Me ----------------------------->
-
-<main>
-    <!--image-->
-    <div>
-        <img src="assets/my-images/img3.jpg" title="Dion" alt="Dion.img" width="500px">
-    </div>
-
-    <!--About Me topic-->
-    <div>
-        <div>About</div>
-        <div>Me.</div>
-    </div>
-
-    <hr>
-
-    <!--Info Box-->
-    <section>
+    <header>
+        <!--Logo-->
         <div>
-            <div>Name :</div>
-            <div>Kavisha Dion Fernando</div>
-        </div>
-        <div>
-            <div>Age :</div>
-            <div>21</div>
-        </div>
-        <div>
-            <div>Nationality :</div>
-            <div>Sri Lankan</div>
-        </div>
-        <div>
-            <div>Occupation :</div>
-            <div>Full Stack Developer</div>
-        </div>
-        <div>
-            <div>Tel :</div>
-            <div>+94 76 714 9543</div>
-        </div>
-        <div>
-            <div>Email :</div>
-            <div>dionfernando2003@gmal.com</div>
-        </div>
-    </section>
-
-    <!--About Me Paragraph-->
-    <div>
-        <p>I wish to design and develop software according to daily updating new technologies. Therefore my vision is to provide high quality service to my clients in the future. Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores ecessitatibus
-            obcaecati possimus qui.</p>
-    </div>
-
-    <!--Mission and Vision-->
-    <section>
-        <div>
-            <div>Mission</div>
-            <p>"To develop innovative and efficient software solutions that enhance user experiences and drive business success."</p>
-        </div>
-        <div>
-            <div>Vision</div>
-            <p>"To be a leading full stack developer, creating impactful projects that shape the future of technology."</p>
-        </div>
-    </section>
-
-</main>
-
-
-
-<!----------------------------- Photo Gallery ----------------------------->
-
-<main>
-    <!--images-->
-    <div>
-        <img src="assets/my-images/img2.webp" title="Dion" alt="Dion image" width="500px">
-    </div>
-    <div>
-        <img src="assets/my-images/img4.jpg" title="Dion" alt="Dion image">
-    </div>
-    <div>
-        <img src="assets/my-images/img5.jpeg" title="Dion" alt="Dion image" width="500px">
-    </div>
-    <div>
-        <img src="assets/my-images/img9.jpg" title="Dion" alt="Dion image">
-    </div>
-    <div>
-        <img src="assets/my-images/img10.jpeg" title="Dion" alt="Dion image">
-    </div>
-    <div>
-        <img src="assets/my-images/img11.jpeg" title="Dion" alt="Dion image">
-    </div>
-
-    <!--instagram-->
-    <div>
-        <img src="assets/icons/insta.png" title="instagram" alt="instagram">
-    </div>
-
-</main>
-
-
-
-<!----------------------------- Education ----------------------------->
-
-<main>
-
-
-    <!--topic-->
-    <div>
-        <div>Education</div>
-        <div>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores ecessitatibus </div>
-
-        <img src="assets/education-brain.png" title="educational brain" alt="educational brain">
-    </div>
-
-    <!--Boxes-->
-    <section>
-        <!--box 1-->
-        <div>
-            <img src="assets/icons/book.png" title="icon" alt="icon">
-
-            <div>2018</div>
-            <div>GCE O/L Examination</div>
+            <img src="assets/icons/Logo.png" title="Logo" alt="Logo" width="55px">
         </div>
 
-        <!--box 2-->
-        <div>
-            <img src="assets/icons/diploma.png" title="icon" alt="icon">
+        <!--Navigation Menu-->
+        <nav>
+            <a href="">Home</a>
+            <a href="">Gallery</a>
+            <a href="">Education</a>
+            <a href="">Skills</a>
+            <a href="">Assignments</a>
+            <a href="">Projects</a>
+            <a href="">YouTube</a>
+            <a href="">Photography</a>
+            <a href="">Hire Me</a>
+        </nav>
+    </header>
 
-            <div>2021</div>
-            <div>GCE A/L Examination</div>
+
+    <!---------------------Paralax Scene------------------------------>
+    <main id="ParalaxScene">
+        <div>
+            <img id="stickyMountain" src="assets/mountain.png" width="100%">
+<!--            <img src="assets/m_2.png" width="100%">-->
         </div>
 
-        <!--box 3-->
-        <div>
-            <img src="assets/icons/graduation.png" title="icon" alt="icon">
 
-            <div>2020</div>
-            <div>Diploma in Information Technology (DITEC)</div>
+        <!----------------------------- Home ----------------------------->
+
+        <!--Hero Section-->
+        <main id="homeMain">
+            <!--Welcome-->
+            <section>
+                <div>Welcome to My Portfolio</div>
+                <div>Dion Fernando</div>
+            </section>
+
+            <!--My Info-->
+            <div>Hey! I'm Dion Fernando</div>
+            <div>Developer | UI UX Designer | YouTuber | Photographer</div>
+            <button>Hire Me</button>
+
+            <!--Website Links-->
+            <img src="assets/icons/insta.png" title="Instagram" alt="Instagram">
+            <img src="assets/icons/facebook.png" title="Facebook" alt="Facebook">
+            <img src="assets/icons/twitter.png" title="Twitter" alt="Twitter">
+            <img src="assets/icons/likedin.png" title="LinkedIn" alt="LinkedIn">
+            <img src="assets/icons/github.png" title="GitHub" alt="GitHub">
+
+            <br>
+
+            <!--My Image-->
+            <div>
+                <img src="assets/my-images/img1.png" title="Dion" alt="Dion.img">
+            </div>
+        </main>
+
+    </main>
+
+
+    <!----------------------------- About Me ----------------------------->
+
+    <main>
+        <!--image-->
+        <div>
+            <img src="assets/my-images/img3.jpg" title="Dion" alt="Dion.img" width="500px">
         </div>
 
-        <!--box 4-->
+        <!--About Me topic-->
         <div>
-            <img src="assets/icons/diploma.png" title="icon" alt="icon">
-
-            <div>2022</div>
-            <div>Higher National Diploma (HND)</div>
+            <div>About</div>
+            <div>Me.</div>
         </div>
 
-        <!--box 5-->
+        <hr>
+
+        <!--Info Box-->
+        <section>
+            <div>
+                <div>Name :</div>
+                <div>Kavisha Dion Fernando</div>
+            </div>
+            <div>
+                <div>Age :</div>
+                <div>21</div>
+            </div>
+            <div>
+                <div>Nationality :</div>
+                <div>Sri Lankan</div>
+            </div>
+            <div>
+                <div>Occupation :</div>
+                <div>Full Stack Developer</div>
+            </div>
+            <div>
+                <div>Tel :</div>
+                <div>+94 76 714 9543</div>
+            </div>
+            <div>
+                <div>Email :</div>
+                <div>dionfernando2003@gmal.com</div>
+            </div>
+        </section>
+
+        <!--About Me Paragraph-->
         <div>
-            <img src="assets/icons/studentmale.png" title="icon" alt="icon">
-
-            <div>2024</div>
-            <div>Graduate Diploma in Software Engineering (GDSE)</div>
-        </div>
-    </section>
-
-
-
-    <!-----Achievements----->
-
-    <section>
-
-        <h1>Achievements</h1>
-
-        <div>
-            <img src="assets/achievements/a4.jpeg" title="achievement" alt="achievement.img">
-            <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
-        </div>
-
-        <div>
-            <img src="assets/achievements/a2.jpeg" title="achievement" alt="achievement.img" width="500px">
-            <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
-        </div>
-
-        <div>
-            <img src="assets/achievements/a3.jpeg" title="achievement" alt="achievement.img" width="500px">
-            <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
-        </div>
-
-        <div>
-            <img src="assets/achievements/a5.jpeg" title="achievement" alt="achievement.img" width="500px">
-            <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
-        </div>
-
-        <div>
-            <img src="assets/achievements/a9.jpeg" title="achievement" alt="achievement.img" width="500px">
-            <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+            <p>I wish to design and develop software according to daily updating new technologies. Therefore my vision is to provide high quality service to my clients in the future. Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores ecessitatibus
+                obcaecati possimus qui.</p>
         </div>
 
+        <!--Mission and Vision-->
+        <section>
+            <div>
+                <div>Mission</div>
+                <p>"To develop innovative and efficient software solutions that enhance user experiences and drive business success."</p>
+            </div>
+            <div>
+                <div>Vision</div>
+                <p>"To be a leading full stack developer, creating impactful projects that shape the future of technology."</p>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!----------------------------- Photo Gallery ----------------------------->
+
+    <main>
+        <!--images-->
         <div>
-            <img src="assets/achievements/a6.jpeg" title="achievement" alt="achievement.img" width="500px">
-            <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+            <img src="assets/my-images/img2.webp" title="Dion" alt="Dion image" width="500px">
+        </div>
+        <div>
+            <img src="assets/my-images/img4.jpg" title="Dion" alt="Dion image">
+        </div>
+        <div>
+            <img src="assets/my-images/img5.jpeg" title="Dion" alt="Dion image" width="500px">
+        </div>
+        <div>
+            <img src="assets/my-images/img9.jpg" title="Dion" alt="Dion image">
+        </div>
+        <div>
+            <img src="assets/my-images/img10.jpeg" title="Dion" alt="Dion image">
+        </div>
+        <div>
+            <img src="assets/my-images/img11.jpeg" title="Dion" alt="Dion image">
+        </div>
+
+        <!--instagram-->
+        <div>
+            <img src="assets/icons/insta.png" title="instagram" alt="instagram">
+        </div>
+
+    </main>
+
+
+
+    <!----------------------------- Education ----------------------------->
+
+    <main>
+
+
+        <!--topic-->
+        <div>
+            <div>Education</div>
+            <div>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores ecessitatibus </div>
+
+            <img src="assets/education-brain.png" title="educational brain" alt="educational brain">
+        </div>
+
+        <!--Boxes-->
+        <section>
+            <!--box 1-->
+            <div>
+                <img src="assets/icons/book.png" title="icon" alt="icon">
+
+                <div>2018</div>
+                <div>GCE O/L Examination</div>
+            </div>
+
+            <!--box 2-->
+            <div>
+                <img src="assets/icons/diploma.png" title="icon" alt="icon">
+
+                <div>2021</div>
+                <div>GCE A/L Examination</div>
+            </div>
+
+            <!--box 3-->
+            <div>
+                <img src="assets/icons/graduation.png" title="icon" alt="icon">
+
+                <div>2020</div>
+                <div>Diploma in Information Technology (DITEC)</div>
+            </div>
+
+            <!--box 4-->
+            <div>
+                <img src="assets/icons/diploma.png" title="icon" alt="icon">
+
+                <div>2022</div>
+                <div>Higher National Diploma (HND)</div>
+            </div>
+
+            <!--box 5-->
+            <div>
+                <img src="assets/icons/studentmale.png" title="icon" alt="icon">
+
+                <div>2024</div>
+                <div>Graduate Diploma in Software Engineering (GDSE)</div>
+            </div>
+        </section>
+
+
+
+        <!-----Achievements----->
+
+        <section>
+
+            <h1>Achievements</h1>
+
+            <div>
+                <img src="assets/achievements/a4.jpeg" title="achievement" alt="achievement.img">
+                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+            </div>
+
+            <div>
+                <img src="assets/achievements/a2.jpeg" title="achievement" alt="achievement.img" width="500px">
+                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+            </div>
+
+            <div>
+                <img src="assets/achievements/a3.jpeg" title="achievement" alt="achievement.img" width="500px">
+                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+            </div>
+
+            <div>
+                <img src="assets/achievements/a5.jpeg" title="achievement" alt="achievement.img" width="500px">
+                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+            </div>
+
+            <div>
+                <img src="assets/achievements/a9.jpeg" title="achievement" alt="achievement.img" width="500px">
+                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+            </div>
+
+            <div>
+                <img src="assets/achievements/a6.jpeg" title="achievement" alt="achievement.img" width="500px">
+                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+            </div>
+
+            <div>
+                <img src="assets/achievements/a7.jpeg" title="achievement" alt="achievement.img">
+                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+            </div>
+
+            <div>
+                <img src="assets/achievements/a8.jpeg" title="achievement" alt="achievement.img">
+                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!----------------------------- Skils ----------------------------->
+
+    <main>
+        <!--Header-->
+        <div>
+            <h1>Skills</h1>
+            <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores ecessitatibus Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, </p>
+        </div>
+
+        <hr>
+
+        <!--skills-->
+        <section>
+
+            <div>
+                <h3>85%</h3>
+                <h3>Java</h3>
+            </div>
+
+            <div>
+                <h3>90%</h3>
+                <h3>JavaFX</h3>
+            </div>
+
+            <div>
+                <h3>98%</h3>
+                <h3>Figma</h3>
+            </div>
+
+            <div>
+                <h3>78%</h3>
+                <h3>SQL</h3>
+            </div>
+
+            <div>
+                <h3>95%</h3>
+                <h3>HTML</h3>
+            </div>
+
+            <div>
+                <h3>95%</h3>
+                <h3>CSS</h3>
+            </div>
+
+            <div>
+                <h3>85%</h3>
+                <h3>JavaScript</h3>
+            </div>
+
+        </section>
+
+
+        <!--Software-->
+        <section>
+
+            <!--button-->
+            <div>
+                <button>Download CV</button>
+            </div>
+
+            <!--icons-->
+            <div>
+                <div>
+                    <img src="assets/icons/figma.png" title="figma" alt="figma">
+                </div>
+
+                <div>
+                    <img src="assets/icons/java.png" title="java" alt="java">
+                </div>
+
+                <div>
+                    <img src="assets/icons/intelij.png" title="intelij" alt="intelij">
+                </div>
+
+                <div>
+                    <img src="assets/icons/CSS.png" title="CSS" alt="CSS">
+                </div>
+
+                <div>
+                    <img src="assets/icons/VS.png" title="VS" alt="VS">
+                </div>
+
+                <div>
+                    <img src="assets/icons/JS.png" title="JS" alt="JS">
+                </div>
+
+                <div>
+                    <img src="assets/icons/html.png" title="html" alt="html">
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!----------------------------- Assignments ----------------------------->
+
+    <main>
+
+        <!--Header-->
+        <div>
+            <h1>Assignment</h1>
+            <h4>Categories</h4>
+        </div>
+
+        <!--Button-->
+        <div>
+            <button>Go to Git</button>
         </div>
 
         <div>
-            <img src="assets/achievements/a7.jpeg" title="achievement" alt="achievement.img">
-            <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+
+            <!--Containers-->
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
+            <div></div>
+
         </div>
 
+    </main>
+
+
+
+    <!----------------------------- Project ----------------------------->
+
+    <main>
+
+        <!--Header-->
         <div>
-            <img src="assets/achievements/a8.jpeg" title="achievement" alt="achievement.img">
-            <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+            <h1>Projects</h1>
+            <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
         </div>
 
-    </section>
+        <!--Containers-->
+        <section>
+            <!--stock management-->
+            <div>
+                <div>
+                    <img src="assets/Stockmanage.jpg" title="Stock Management" alt="stock management img">
+                    <img src="" title="Stock Management" alt="stock management img">
+                    <img src="" title="Stock Management" alt="stock management img">
+                </div>
 
-</main>
+                <div>
+                    <h4>Stock Management System</h4>
+                    <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+                </div>
+
+                <div>
+                    <button>Go to Git</button>
+                </div>
+            </div>
+
+            <!--connect 4 game-->
+            <div>
+                <div>
+                    <img src="assets/Connect4.jpg" title="Connect 4 Game" alt="connect4 game img" width="500px">
+                    <img src="" title="Connect 4 Game" alt="connect4 game img">
+                    <img src="" title="Connect 4 Game" alt="connect4 game img">
+                </div>
+
+                <div>
+                    <h4>Connect 4 Game</h4>
+                    <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+                </div>
+
+                <div>
+                    <button>Go to Git</button>
+                </div>
+            </div>
+
+            <!--Carnage management system-->
+            <div>
+                <div>
+                    <img src="assets/carnage.png" title="Carnage Management System" alt="carnage management img">
+                    <img src="" title="Carnage Management System" alt="carnage management img">
+                    <img src="" title="Carnage Management System" alt="carnage management img">
+                </div>
+
+                <div>
+                    <h4>Carnage Management System</h4>
+                    <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+                </div>
+
+                <div>
+                    <button>Go to Git</button>
+                </div>
+            </div>
+
+            <!--Cashier management system-->
+            <div>
+                <div>
+                    <img src="assets/cashier.jpg" title="Cashier Management System" alt="cashier management img">
+                    <img src="" title="Cashier Management System" alt="cashier management img">
+                    <img src="" title="Cashier Management System" alt="cashier management img">
+                </div>
+
+                <div>
+                    <h4>Cashier Management System</h4>
+                    <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
+                </div>
+
+                <div>
+                    <button>Go to Git</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
 
 
 
-<!----------------------------- Skils ----------------------------->
+    <!----------------------------- YouTube ----------------------------->
 
-<main>
-    <!--Header-->
-    <div>
-        <h1>Skills</h1>
-        <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores ecessitatibus Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, </p>
-    </div>
-
-    <hr>
-
-    <!--skills-->
-    <section>
-
+    <main>
+        <!--header-->
         <div>
-            <h3>85%</h3>
-            <h3>Java</h3>
+            <img src="assets/icons/YouTube.png" title="YouTube Logo" alt="youtube logo">
+            <h1>YouTube</h1>
         </div>
 
+        <!--D ROX-->
+        <section>
+            <!--Logo-->
+            <div>
+                <img src="assets/droxlogo.jpg" title="D ROX" alt="d rox logo img">
+            </div>
+            <div>
+                <h3>D ROX</h3>
+            </div>
+
+            <!--image-->
+            <div>
+                <img src="assets/drox.jpg" title="Video Tumbnail" alt="Video Tumbnail img">
+                <img src="assets/icons/YouTube.png" title="YouTube Logo" alt="youtube logo">
+            </div>
+
+            <div>
+                <p> Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.</p>
+            </div>
+
+            <div>
+                <button>Watch More</button>
+            </div>
+
+        </section>
+
+        <!--D ROX Gaming-->
+        <section>
+            <!--Logo-->
+            <div>
+                <img src="assets/drxg.jpg" title="D ROX Gaming" alt="d rox gaming logo img">
+            </div>
+            <div>
+                <h3>D ROX Gaming</h3>
+            </div>
+
+            <!--image-->
+            <div>
+                <img src="assets/droxgt.jpg" title="Video Tumbnail" alt="Video Tumbnail img">
+                <img src="assets/icons/YouTube.png" title="YouTube Logo" alt="youtube logo">
+            </div>
+
+            <div>
+                <p> Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.</p>
+            </div>
+
+            <div>
+                <button>Watch More</button>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <!----------------------------- KDF Photography ----------------------------->
+
+    <main>
+        <!--header-->
         <div>
-            <h3>90%</h3>
-            <h3>JavaFX</h3>
+            <h1>KDF Photography</h1>
+            <h6>Event Coverage  |  Birthday Party  |  Model Shooting  |  Indoor Events  |  Portrait  |  Videography  |  Logo Designs  |  Professional Editing  </h6>
         </div>
-
-        <div>
-            <h3>98%</h3>
-            <h3>Figma</h3>
-        </div>
-
-        <div>
-            <h3>78%</h3>
-            <h3>SQL</h3>
-        </div>
-
-        <div>
-            <h3>95%</h3>
-            <h3>HTML</h3>
-        </div>
-
-        <div>
-            <h3>95%</h3>
-            <h3>CSS</h3>
-        </div>
-
-        <div>
-            <h3>85%</h3>
-            <h3>JavaScript</h3>
-        </div>
-
-    </section>
-
-
-    <!--Software-->
-    <section>
 
         <!--button-->
         <div>
-            <button>Download CV</button>
+            <button>Book Now</button>
         </div>
 
-        <!--icons-->
+        <!--images-->
+        <section>
+            <div>
+                <img src="assets/img1.jpeg" alt="kdfphotograhy" title="kdfphotograhy" width="500px">
+                <img src="assets/img2.jpeg" alt="kdfphotograhy" title="kdfphotograhy" width="500px">
+                <img src="assets/img3.jpeg" alt="kdfphotograhy" title="kdfphotograhy" width="500px">
+                <img src="assets/img4.jpeg" alt="kdfphotograhy" title="kdfphotograhy" width="500px">
+            </div>
+
+            <!--arrow buttons-->
+            <div>
+                <img src="assets/icons/arrowleft.png" alt="arrow button" title="slide left">
+                <img src="assets/icons/arrowright.png" alt="arrow button" title="slide right">
+            </div>
+        </section>
+
+        <!--footer-->
         <div>
-            <div>
-                <img src="assets/icons/figma.png" title="figma" alt="figma">
-            </div>
-
-            <div>
-                <img src="assets/icons/java.png" title="java" alt="java">
-            </div>
-
-            <div>
-                <img src="assets/icons/intelij.png" title="intelij" alt="intelij">
-            </div>
-
-            <div>
-                <img src="assets/icons/CSS.png" title="CSS" alt="CSS">
-            </div>
-
-            <div>
-                <img src="assets/icons/VS.png" title="VS" alt="VS">
-            </div>
-
-            <div>
-                <img src="assets/icons/JS.png" title="JS" alt="JS">
-            </div>
-
-            <div>
-                <img src="assets/icons/html.png" title="html" alt="html">
-            </div>
-        </div>
-
-    </section>
-
-</main>
-
-
-
-<!----------------------------- Assignments ----------------------------->
-
-<main>
-
-    <!--Header-->
-    <div>
-        <h1>Assignment</h1>
-        <h4>Categories</h4>
-    </div>
-
-    <!--Button-->
-    <div>
-        <button>Go to Git</button>
-    </div>
-
-    <div>
-
-        <!--Containers-->
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-    </div>
-
-</main>
-
-
-
-<!----------------------------- Project ----------------------------->
-
-<main>
-
-    <!--Header-->
-    <div>
-        <h1>Projects</h1>
-        <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
-    </div>
-
-    <!--Containers-->
-    <section>
-        <!--stock management-->
-        <div>
-            <div>
-                <img src="assets/Stockmanage.jpg" title="Stock Management" alt="stock management img">
-                <img src="" title="Stock Management" alt="stock management img">
-                <img src="" title="Stock Management" alt="stock management img">
-            </div>
-
-            <div>
-                <h4>Stock Management System</h4>
-                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
-            </div>
-
-            <div>
-                <button>Go to Git</button>
-            </div>
-        </div>
-
-        <!--connect 4 game-->
-        <div>
-            <div>
-                <img src="assets/Connect4.jpg" title="Connect 4 Game" alt="connect4 game img" width="500px">
-                <img src="" title="Connect 4 Game" alt="connect4 game img">
-                <img src="" title="Connect 4 Game" alt="connect4 game img">
-            </div>
-
-            <div>
-                <h4>Connect 4 Game</h4>
-                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
-            </div>
-
-            <div>
-                <button>Go to Git</button>
-            </div>
-        </div>
-
-        <!--Carnage management system-->
-        <div>
-            <div>
-                <img src="assets/carnage.png" title="Carnage Management System" alt="carnage management img">
-                <img src="" title="Carnage Management System" alt="carnage management img">
-                <img src="" title="Carnage Management System" alt="carnage management img">
-            </div>
-
-            <div>
-                <h4>Carnage Management System</h4>
-                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
-            </div>
-
-            <div>
-                <button>Go to Git</button>
-            </div>
-        </div>
-
-        <!--Cashier management system-->
-        <div>
-            <div>
-                <img src="assets/cashier.jpg" title="Cashier Management System" alt="cashier management img">
-                <img src="" title="Cashier Management System" alt="cashier management img">
-                <img src="" title="Cashier Management System" alt="cashier management img">
-            </div>
-
-            <div>
-                <h4>Cashier Management System</h4>
-                <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.  </p>
-            </div>
-
-            <div>
-                <button>Go to Git</button>
-            </div>
-
-        </div>
-    </section>
-</main>
-
-
-
-<!----------------------------- YouTube ----------------------------->
-
-<main>
-    <!--header-->
-    <div>
-        <img src="assets/icons/YouTube.png" title="YouTube Logo" alt="youtube logo">
-        <h1>YouTube</h1>
-    </div>
-
-    <!--D ROX-->
-    <section>
-        <!--Logo-->
-        <div>
-            <img src="assets/droxlogo.jpg" title="D ROX" alt="d rox logo img">
-        </div>
-        <div>
-            <h3>D ROX</h3>
-        </div>
-
-        <!--image-->
-        <div>
-            <img src="assets/drox.jpg" title="Video Tumbnail" alt="Video Tumbnail img">
-            <img src="assets/icons/YouTube.png" title="YouTube Logo" alt="youtube logo">
+            <img src="assets/icons/copyright.png" alt="copyright" title="copyrights">
+            <h6>All rights reserved to KDF Photography</h6>
         </div>
 
         <div>
-            <p> Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.</p>
+            <h6>KDF PHOTOGRAPHY  |  +94 76 714 9543</h6>
         </div>
 
-        <div>
-            <button>Watch More</button>
-        </div>
-
-    </section>
-
-    <!--D ROX Gaming-->
-    <section>
-        <!--Logo-->
-        <div>
-            <img src="assets/drxg.jpg" title="D ROX Gaming" alt="d rox gaming logo img">
-        </div>
-        <div>
-            <h3>D ROX Gaming</h3>
-        </div>
-
-        <!--image-->
-        <div>
-            <img src="assets/droxgt.jpg" title="Video Tumbnail" alt="Video Tumbnail img">
-            <img src="assets/icons/YouTube.png" title="YouTube Logo" alt="youtube logo">
-        </div>
-
-        <div>
-            <p> Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui.</p>
-        </div>
-
-        <div>
-            <button>Watch More</button>
-        </div>
-
-    </section>
-</main>
+    </main>
 
 
 
-<!----------------------------- KDF Photography ----------------------------->
+    <!----------------------------- Hire Me ----------------------------->
 
-<main>
-    <!--header-->
-    <div>
-        <h1>KDF Photography</h1>
-        <h6>Event Coverage  |  Birthday Party  |  Model Shooting  |  Indoor Events  |  Portrait  |  Videography  |  Logo Designs  |  Professional Editing  </h6>
-    </div>
+    <main>
 
-    <!--button-->
-    <div>
-        <button>Book Now</button>
-    </div>
-
-    <!--images-->
-    <section>
-        <div>
-            <img src="assets/img1.jpeg" alt="kdfphotograhy" title="kdfphotograhy" width="500px">
-            <img src="assets/img2.jpeg" alt="kdfphotograhy" title="kdfphotograhy" width="500px">
-            <img src="assets/img3.jpeg" alt="kdfphotograhy" title="kdfphotograhy" width="500px">
-            <img src="assets/img4.jpeg" alt="kdfphotograhy" title="kdfphotograhy" width="500px">
-        </div>
-
-        <!--arrow buttons-->
-        <div>
-            <img src="assets/icons/arrowleft.png" alt="arrow button" title="slide left">
-            <img src="assets/icons/arrowright.png" alt="arrow button" title="slide right">
-        </div>
-    </section>
-
-    <!--footer-->
-    <div>
-        <img src="assets/icons/copyright.png" alt="copyright" title="copyrights">
-        <h6>All rights reserved to KDF Photography</h6>
-    </div>
-
-    <div>
-        <h6>KDF PHOTOGRAPHY  |  +94 76 714 9543</h6>
-    </div>
-
-</main>
-
-
-
-<!----------------------------- Hire Me ----------------------------->
-
-<main>
-
-    <!--hire me-->
-    <section>
-        <div>
-            <h1>Hire</h1>
-            <h4>Me.</h4>
-        </div>
-        <div>
-            <h3>WHY</h3>
-            <h3>Hire Me?</h3>
-            <h6>Passionate software engineer with a full stack skill set, dedicated to delivering innovative solutions and exceptional results.</h6>
-        </div>
-
-        <!--services-->
-        <div>
+        <!--hire me-->
+        <section>
             <div>
-                <img src="assets/icons/frontend.png" alt="frontend" title="Front End">
-                <h6>Front End Development </h6>
+                <h1>Hire</h1>
+                <h4>Me.</h4>
             </div>
             <div>
-                <img src="assets/icons/backend.png" alt="backend" title="Back End">
-                <h6>Back End Development </h6>
+                <h3>WHY</h3>
+                <h3>Hire Me?</h3>
+                <h6>Passionate software engineer with a full stack skill set, dedicated to delivering innovative solutions and exceptional results.</h6>
             </div>
-            <div>
-                <img src="assets/icons/webapp.png" alt="web" title="Web App">
-                <h6>Web App Development </h6>
-            </div>
-            <div>
-                <img src="assets/icons/desktopapp.png" alt="desktop" title="Desktop App">
-                <h6>Desktop App Development </h6>
-            </div>
-            <div>
-                <img src="assets/icons/prototype.png" alt="prototype" title="Prototype">
-                <h6>Prototype Development </h6>
-            </div>
-        </div>
 
-        <!--Value Box-->
-        <div>
+            <!--services-->
             <div>
-                <h4>4+</h4>
-                <h6>Yrs of Experience</h6>
+                <div>
+                    <img src="assets/icons/frontend.png" alt="frontend" title="Front End">
+                    <h6>Front End Development </h6>
+                </div>
+                <div>
+                    <img src="assets/icons/backend.png" alt="backend" title="Back End">
+                    <h6>Back End Development </h6>
+                </div>
+                <div>
+                    <img src="assets/icons/webapp.png" alt="web" title="Web App">
+                    <h6>Web App Development </h6>
+                </div>
+                <div>
+                    <img src="assets/icons/desktopapp.png" alt="desktop" title="Desktop App">
+                    <h6>Desktop App Development </h6>
+                </div>
+                <div>
+                    <img src="assets/icons/prototype.png" alt="prototype" title="Prototype">
+                    <h6>Prototype Development </h6>
+                </div>
             </div>
-            <div>
-                <h4>15+</h4>
-                <h6>Projects</h6>
-            </div>
-            <div>
-                <h4>5+</h4>
-                <h6>Awards</h6>
-            </div>
-            <div>
-                <h4>5+</h4>
-                <h6>Online Coding Certificates</h6>
-            </div>
-            <div>
-                <h4>20+</h4>
-                <h6>Code Repositories</h6>
-            </div>
-            <div>
-                <h4>500+</h4>
-                <h6>Happy Clients</h6>
-            </div>
-        </div>
-    </section>
 
-    <hr>
+            <!--Value Box-->
+            <div>
+                <div>
+                    <h4>4+</h4>
+                    <h6>Yrs of Experience</h6>
+                </div>
+                <div>
+                    <h4>15+</h4>
+                    <h6>Projects</h6>
+                </div>
+                <div>
+                    <h4>5+</h4>
+                    <h6>Awards</h6>
+                </div>
+                <div>
+                    <h4>5+</h4>
+                    <h6>Online Coding Certificates</h6>
+                </div>
+                <div>
+                    <h4>20+</h4>
+                    <h6>Code Repositories</h6>
+                </div>
+                <div>
+                    <h4>500+</h4>
+                    <h6>Happy Clients</h6>
+                </div>
+            </div>
+        </section>
 
-    <!--Contact Info-->
-    <section>
+        <hr>
 
         <!--Contact Info-->
-        <div>
-            <h1>Contact Info</h1>
+        <section>
 
+            <!--Contact Info-->
             <div>
-                <img src="assets/icons/email.png" alt="Email" title="Email">
-                <h6>dionfernando2003@gmail.com</h6>
-            </div>
-            <div>
-                <img src="assets/icons/phone.png" alt="Phone" title="Phone">
-                <h6>+94 76 714 9543</h6>
-            </div>
-            <div>
-                <img src="assets/icons/location.png" alt="Location" title="Location">
-                <h6>Sri Lanka</h6>
-            </div>
-        </div>
+                <h1>Contact Info</h1>
 
-        <!--Other links-->
-        <div>
-            <div>
-                <img src="assets/icons/insta.png" alt="Instagram" title="Instagram">
+                <div>
+                    <img src="assets/icons/email.png" alt="Email" title="Email">
+                    <h6>dionfernando2003@gmail.com</h6>
+                </div>
+                <div>
+                    <img src="assets/icons/phone.png" alt="Phone" title="Phone">
+                    <h6>+94 76 714 9543</h6>
+                </div>
+                <div>
+                    <img src="assets/icons/location.png" alt="Location" title="Location">
+                    <h6>Sri Lanka</h6>
+                </div>
             </div>
+
+            <!--Other links-->
             <div>
-                <img src="assets/icons/facebook.png" alt="Facebook" title="Facebook">
+                <div>
+                    <img src="assets/icons/insta.png" alt="Instagram" title="Instagram">
+                </div>
+                <div>
+                    <img src="assets/icons/facebook.png" alt="Facebook" title="Facebook">
+                </div>
+                <div>
+                    <img src="assets/icons/twitter.png" alt="Twitter" title="Twitter">
+                </div>
+                <div>
+                    <img src="assets/icons/likedin.png" alt="Likedin" title="Likedin">
+                </div>
+                <div>
+                    <img src="assets/icons/github.png" alt="Github" title="Github">
+                </div>
             </div>
-            <div>
-                <img src="assets/icons/twitter.png" alt="Twitter" title="Twitter">
-            </div>
-            <div>
-                <img src="assets/icons/likedin.png" alt="Likedin" title="Likedin">
-            </div>
-            <div>
-                <img src="assets/icons/github.png" alt="Github" title="Github">
-            </div>
-        </div>
 
 
-        <!--Form-->
-        <form>
-            <div>
-                <h6>First Name</h6>
-                <input type="text">
-            </div>
-            <div>
-                <h6>Last Name</h6>
-                <input type="text">
-            </div>
-            <div>
-                <h6>Email</h6>
-                <input type="text">
-            </div>
-            <div>
-                <h6>Subject</h6>
-                <input type="text">
-            </div>
-            <div>
-                <h6>Your Message</h6>
-                <textarea></textarea>
-            </div>
-            <button>Contact Me</button>
-        </form>
+            <!--Form-->
+            <form>
+                <div>
+                    <h6>First Name</h6>
+                    <input type="text">
+                </div>
+                <div>
+                    <h6>Last Name</h6>
+                    <input type="text">
+                </div>
+                <div>
+                    <h6>Email</h6>
+                    <input type="text">
+                </div>
+                <div>
+                    <h6>Subject</h6>
+                    <input type="text">
+                </div>
+                <div>
+                    <h6>Your Message</h6>
+                    <textarea></textarea>
+                </div>
+                <button>Contact Me</button>
+            </form>
 
-    </section>
+        </section>
 
-</main>
+    </main>
 
-<!--Stick End Main-->
+    <!--Stick End Main-->
 </main>
 
 <!----------------------------- Footer ----------------------------->
@@ -961,7 +950,7 @@
         <div>
             <img src="assets/icons/Logo.png" alt="logo" title="logo">
         </div>
-        
+
         <div>
             <img src="assets/icons/insta.png" alt="insta" title="Instagram">
             <img src="assets/icons/facebook.png" alt="fb" title="Facebook">
@@ -983,6 +972,15 @@
     </div>
 </main>
 
+
+<script>
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.pageYOffset;
+        var scale = 1 + scrollPosition / 300; // Adjust the denominator to control the speed of zooming
+        document.querySelector('#ParalaxScene>div>img:nth-child(2)').style.transform = 'scale(' + scale + ')';
+        document.querySelector('#ParalaxScene>div>img:nth-child(2)').style.position = 'fixed'; // This will fix the position of the image
+    });
+</script>
 
 
 </body>
