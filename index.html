@@ -213,30 +213,24 @@
 
         }
 
+        /*Social Media Icons*/
+        #homeMain>div:nth-child(2){
+            position: absolute;
+            top: -50px;
+            left: 20px;
+        }
 
-        /*!*My-Info*!*/
-        /*#homeMain>div:nth-child(2){*/
-        /*    font-size: 55px;*/
-        /*    color: white;*/
-        /*    text-align: center;*/
+        #homeMain>div:nth-child(2)>img{
+            width: 30px;
+        }
 
-        /*    position: absolute;*/
-        /*    top: 750px;*/
-        /*    left: 400px;*/
+        /*My Image*/
+        #my-image>img{
+            position: absolute;
+            top: -500px;
+            right: 0px;
+        }
 
-        /*    z-index: -2;*/
-        /*}*/
-
-
-        /*!*My-Image*!*/
-        /*#homeMain>div>img{*/
-        /*    position: absolute;*/
-        /*    top: 500px;*/
-        /*    right: 0;*/
-
-
-        /*    z-index: -2;*/
-        /*}*/
 
         @keyframes scroll_image {
             from {
@@ -307,16 +301,16 @@
             </section>
 
             <!--Website Links-->
-            <img src="assets/icons/insta.png" title="Instagram" alt="Instagram">
-            <img src="assets/icons/facebook.png" title="Facebook" alt="Facebook">
-            <img src="assets/icons/twitter.png" title="Twitter" alt="Twitter">
-            <img src="assets/icons/likedin.png" title="LinkedIn" alt="LinkedIn">
-            <img src="assets/icons/github.png" title="GitHub" alt="GitHub">
-
-            <br>
+            <div>
+                <img src="assets/icons/insta.png" title="Instagram" alt="Instagram">
+                <img src="assets/icons/facebook.png" title="Facebook" alt="Facebook">
+                <img src="assets/icons/twitter.png" title="Twitter" alt="Twitter">
+                <img src="assets/icons/likedin.png" title="LinkedIn" alt="LinkedIn">
+                <img src="assets/icons/github.png" title="GitHub" alt="GitHub">
+            </div>
 
             <!--My Image-->
-            <div>
+            <div id="my-image">
                 <img src="assets/my-images/img1.png" title="Dion" alt="Dion.img">
             </div>
         </main>
