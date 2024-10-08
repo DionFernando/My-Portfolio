@@ -14,239 +14,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <!--CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="css/style.css">
 
 
     <style>
-
-        *{
-            font-family: "Francois One", sans-serif;
-        }
-        body{
-            background-color: pink;
-        }
-
-        /*---------------------------- Navigation ----------------------------*/
-
-        /*--Navigation box--*/
-        header{
-            width: 100%;
-            height: 80px;
-            background-color: black;
-
-            position: sticky;
-            top: 0;
-        }
-
-        /*--Logo--*/
-        header>div>img{
-            position: absolute;
-            margin: 2px;
-            top: 12px;
-        }
-
-        /*--Links--*/
-        header>nav>a{
-            text-decoration: none;
-            color: white;
-            font-family: "Francois One", sans-serif;
-
-            position: absolute;
-            top: 32px;
-        }
-
-        header>nav>a:first-child{
-            right: 790px
-        }
-        header>nav>a:nth-child(2){
-            right: 705px;
-        }
-        header>nav>a:nth-child(3){
-            right: 605px;
-        }
-        header>nav>a:nth-child(4){
-            right: 530px;
-        }
-        header>nav>a:nth-child(5){
-            right: 410px;
-        }
-        header>nav>a:nth-child(6){
-            right: 320px;
-        }
-        header>nav>a:nth-child(7){
-            right: 225px;
-        }
-        header>nav>a:nth-child(8){
-            right: 110px;
-        }
-        header>nav>a:nth-child(9){
-            right: 20px;
-        }
-
-        /*--Links Hover--*/
-        header>nav>a:hover{
-            color: #50DBEE;
-        }
-
-
-
-        /*---------------------------- Paralax Scene ----------------------------*/
-
-        #ParalaxScene>div{
-            width: 100%;
-            height: 1500px;
-        }
-
-        /*background mountain image*/
-        #stickyMountain {
-            background-color: black;
-            position: sticky;
-            top: 80px;
-
-            z-index: -10;
-        }
-
-        /*Paralax effect zooming image*/
-        #ParalaxScene>div>img:nth-child(2) {
-            transition: transform 0.1s ease-out;
-            z-index: -1;
-            position: fixed;
-            top: 14px;
-            left: 0;
-        }
-
-        /*Sentence*/
-        #ParalaxScene>div>section{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: -2;
-
-            position: relative;
-            top: 0;
-        }
-
-        /*Scroll*/
-        #ParalaxScene>div>section>div:first-child{
-            font-family: "Francois One", sans-serif;
-            font-size: 24px;
-
-            color: white;
-            text-align: center;
-
-            position: absolute;
-            top: -600px;
-
-            animation: scroll_image 2s infinite;
-        }
-
-        /*text Glow*/
-        #ParalaxScene>div>section>div:first-child>div{
-            text-shadow: 0 0 10px #50DBEE;
-        }
-
-        #ParalaxScene>div>section>div:first-child>img {
-        /*Image glow*/
-            filter: drop-shadow(0 0 2px #50DBEE);
-        }
-
-        /*Welcome to my portfolio*/
-        #ParalaxScene>div>section>div:nth-child(2){
-            font-size: 40px;
-            color: #50DBEE;
-            text-align: center;
-
-            position: absolute;
-        }
-
-        #ParalaxScene>div>section>div:nth-child(3){
-            font-size: 96px;
-            color: #50DBEE;
-            text-align: center;
-
-            position: absolute;
-            top: 50px;
-
-        }
-
-
-
-        /*----------------------------- Home -----------------------------*/
-        #homeMain{
-            width: 100%;
-            position: relative;
-        }
-
-        /*Welcome*/
-        #homeMain>section>div{
-            font-size: 55px;
-
-            color: white;
-            text-align: center;
-
-            position: relative;
-            top: -400px;
-            left: -260px;
-
-            z-index: -2;
-        }
-
-        #homeMain>section>div:nth-child(2){
-            font-size: 20px;
-            top: -370px;
-        }
-
-
-        /*Hire Me*/
-        #homeMain>section>button{
-            font-size: 14px;
-
-            color:#50DBEE;
-            background-color: rgba(0,0,0,0.4);
-            border: 2px solid #50DBEE;
-            border-radius: 20px;
-            padding: 5px 30px;
-
-            position: relative;
-            top: -300px;
-            left: 360px;
-
-            z-index: -1;
-
-        }
-
-        /*Social Media Icons*/
-        #homeMain>div:nth-child(2){
-            position: absolute;
-            top: -50px;
-            left: 20px;
-
-            z-index: -1;
-        }
-
-        #homeMain>div:nth-child(2)>img{
-            width: 30px;
-        }
-
-        /*My Image*/
-        #my-image>img{
-            position: absolute;
-            top: -500px;
-            right: 0px;
-
-            z-index: -2;
-        }
-
-        /*Blazt image*/
-        #my-image>img:first-child{
-            width: 450px;
-            position: absolute;
-            top: -425px;
-            right: 0px;
-        }
-
 
         @keyframes scroll_image {
             from {
@@ -339,14 +118,15 @@
 
     <!----------------------------- About Me ----------------------------->
 
-    <main>
+    <main id="aboutMeMain">
         <!--image-->
-        <div>
-            <img src="assets/my-images/bw.png" title="Dion" alt="Dion.img" width="500px">
+        <div id="img1">
+            <div></div>
+            <img src="assets/my-images/bw.png" title="Dion" alt="Dion.img">
         </div>
 
         <!--About Me topic-->
-        <div>
+        <div id="aboutMeTopic">
             <div>About</div>
             <div>Me.</div>
         </div>
@@ -405,7 +185,7 @@
 
     <!----------------------------- Photo Gallery ----------------------------->
 
-    <main>
+    <main id="galleryMain">
         <!--images-->
         <div>
             <img src="assets/my-images/img2.webp" title="Dion" alt="Dion image" width="500px">
@@ -437,7 +217,7 @@
 
     <!----------------------------- Education ----------------------------->
 
-    <main>
+    <main id="educationMain">
 
 
         <!--topic-->
@@ -495,7 +275,7 @@
 
         <!-----Achievements----->
 
-        <section>
+        <section id="AcheivementsSection">
 
             <h1>Achievements</h1>
 
@@ -547,7 +327,7 @@
 
     <!----------------------------- Skils ----------------------------->
 
-    <main>
+    <main id="SkillMain">
         <!--Header-->
         <div>
             <h1>Skills</h1>
@@ -598,7 +378,7 @@
 
 
         <!--Software-->
-        <section>
+        <section id="Software">
 
             <!--button-->
             <div>
