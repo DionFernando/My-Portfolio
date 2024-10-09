@@ -1,0 +1,740 @@
+*{
+    font-family: "Francois One", sans-serif;
+}
+body{
+    background-color: #828282;
+}
+
+/*---------------------------- Navigation ----------------------------*/
+
+/*--Navigation box--*/
+header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+
+    position: sticky;
+    top: 0;
+}
+
+/*--Logo--*/
+header>div>img{
+    position: absolute;
+    margin: 2px;
+    top: 12px;
+}
+
+/*--Links--*/
+header>nav>a{
+    text-decoration: none;
+    color: white;
+    font-family: "Francois One", sans-serif;
+
+    position: absolute;
+    top: 32px;
+}
+
+header>nav>a:first-child{
+    right: 790px
+}
+header>nav>a:nth-child(2){
+    right: 705px;
+}
+header>nav>a:nth-child(3){
+    right: 605px;
+}
+header>nav>a:nth-child(4){
+    right: 530px;
+}
+header>nav>a:nth-child(5){
+    right: 410px;
+}
+header>nav>a:nth-child(6){
+    right: 320px;
+}
+header>nav>a:nth-child(7){
+    right: 225px;
+}
+header>nav>a:nth-child(8){
+    right: 110px;
+}
+header>nav>a:nth-child(9){
+    right: 20px;
+}
+
+/*--Links Hover--*/
+header>nav>a:hover{
+    color: #50DBEE;
+}
+
+
+
+/*---------------------------- Paralax Scene ----------------------------*/
+
+#ParalaxScene>div{
+    width: 100%;
+    height: 1500px;
+}
+
+/*background mountain image*/
+#stickyMountain {
+    background-color: black;
+    position: sticky;
+    top: 80px;
+
+    z-index: -10;
+}
+
+/*Paralax effect zooming image*/
+#ParalaxScene>div>img:nth-child(2) {
+    transition: transform 0.1s ease-out;
+    z-index: -1;
+    position: fixed;
+    top: 14px;
+    left: 0;
+}
+
+/*Sentence*/
+#ParalaxScene>div>section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+
+    position: relative;
+    top: 0;
+}
+
+/*Scroll*/
+#ParalaxScene>div>section>div:first-child{
+    font-family: "Francois One", sans-serif;
+    font-size: 24px;
+
+    color: white;
+    text-align: center;
+
+    position: absolute;
+    top: -600px;
+
+    animation: scroll_image 2s infinite;
+}
+
+/*text Glow*/
+#ParalaxScene>div>section>div:first-child>div{
+    text-shadow: 0 0 10px #50DBEE;
+}
+
+#ParalaxScene>div>section>div:first-child>img {
+    /*Image glow*/
+    filter: drop-shadow(0 0 2px #50DBEE);
+}
+
+/*Welcome to my portfolio*/
+#ParalaxScene>div>section>div:nth-child(2){
+    font-size: 40px;
+    color: #50DBEE;
+    text-align: center;
+
+    position: absolute;
+}
+
+#ParalaxScene>div>section>div:nth-child(3){
+    font-size: 96px;
+    color: #50DBEE;
+    text-align: center;
+
+    position: absolute;
+    top: 50px;
+
+}
+
+
+
+/*----------------------------- Home -----------------------------*/
+#homeMain{
+    width: 100%;
+    position: relative;
+}
+
+/*Welcome*/
+#homeMain>section>div{
+    font-size: 55px;
+
+    color: white;
+    text-align: center;
+
+    position: relative;
+    top: -400px;
+    left: -260px;
+
+    z-index: -2;
+}
+
+#homeMain>section>div:nth-child(2){
+    font-size: 20px;
+    top: -370px;
+}
+
+
+/*Hire Me*/
+#homeMain>section>button{
+    font-size: 14px;
+
+    color:#50DBEE;
+    background-color: rgba(0,0,0,0.4);
+    border: 2px solid #50DBEE;
+    border-radius: 20px;
+    padding: 5px 30px;
+
+    position: relative;
+    top: -300px;
+    left: 360px;
+
+    z-index: -1;
+
+}
+
+/*Social Media Icons*/
+#homeMain>div:nth-child(2){
+    position: absolute;
+    top: -50px;
+    left: 20px;
+
+    z-index: -1;
+}
+
+#homeMain>div:nth-child(2)>img{
+    width: 30px;
+}
+
+/*My Image*/
+#my-image>img{
+    position: absolute;
+    top: -500px;
+    right: 0;
+
+    z-index: -2;
+}
+
+/*Blazt image*/
+#my-image>img:first-child{
+    width: 450px;
+    position: absolute;
+    top: -425px;
+    right: 0;
+}
+
+
+
+/*----------------------About Me-----------------------------*/
+
+#aboutMeMain{
+    height: 610px;
+    position: relative;
+    background: linear-gradient(45deg, #01121A,#00090E,#000000,#000B11,#01131A);
+
+    z-index: -2;
+}
+
+/*Image*/
+
+#img1>img{
+    width: 350px;
+
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#img1>div{
+    width: 350px;
+    height: 385px;
+    background: rgba(0, 240, 255,0.5);
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+
+    position: absolute;
+    top: 85px;
+    left: 115px;
+}
+
+/*About me topic*/
+#aboutMeTopic{
+    position: absolute;
+
+    right: 640px;
+    bottom: 480px;
+
+}
+
+#aboutMeTopic>div{
+    display: inline-block;
+}
+
+#aboutMeTopic>div:first-child{
+    font-size: 32px;
+    color: white;
+    font-family: Inter, Thin;
+}
+
+#aboutMeTopic>div:nth-child(2){
+    font-size: 48px;
+    color: #50DBEE;
+    font-family: Inter, Bold, serif;
+}
+
+
+/*About Me Info Box*/
+#aboutMeInfoBox{
+    width: 700px;
+    height: 115px;
+    border: 2px solid #00F0FF;
+    border-radius: 15px;
+    background: rgba(0, 240, 255,0.09);
+
+    position: relative;
+    bottom: 240px;
+    left: 580px;
+
+}
+
+#aboutMeInfoBox>div{
+    font-size: 14px;
+    color: white;
+    font-family: Inter, Thin;
+
+    position: absolute;
+    display: flex;
+    gap: 5px;
+
+}
+
+#aboutMeInfoBox>div:first-child{
+    left: 50px;
+    top: 15px;
+}
+
+#aboutMeInfoBox>div:first-child>div:nth-child(2){
+    font-family: Inter, Thin;
+}
+
+#aboutMeInfoBox>div:nth-child(2){
+    left: 400px;
+    top: 15px;
+}
+
+#aboutMeInfoBox>div:nth-child(2)>div:nth-child(2){
+    font-family: Inter, Thin;
+}
+
+#aboutMeInfoBox>div:nth-child(3){
+    left: 50px;
+    top: 50px;
+}
+
+#aboutMeInfoBox>div:nth-child(3)>div:nth-child(2){
+    font-family: Inter, Thin;
+}
+
+#aboutMeInfoBox>div:nth-child(4){
+    left: 400px;
+    top: 50px;
+}
+
+#aboutMeInfoBox>div:nth-child(4)>div:nth-child(2){
+    font-family: Inter, Thin;
+}
+
+#aboutMeInfoBox>div:nth-child(5){
+    left: 50px;
+    top: 85px;
+}
+
+#aboutMeInfoBox>div:nth-child(5)>div:nth-child(2){
+    font-family: Inter, Thin;
+}
+
+#aboutMeInfoBox>div:nth-child(6){
+    left: 400px;
+    top: 85px;
+}
+
+#aboutMeInfoBox>div:nth-child(6)>div:nth-child(2){
+    font-family: Inter, Thin;
+}
+
+
+/*About me para*/
+#aboutMePara{
+    width: 700px;
+
+    text-align: center;
+
+    position: absolute;
+    top: 300px;
+    right: 65px;
+}
+#aboutMePara>p{
+    font-family: Inter, Thin;
+    font-size: 12px;
+    color: white;
+}
+
+/*About Me Vision & Mission*/
+#aboutMeMV{
+    display: flex;
+    color: #00FFF0;
+    font-size: 12px;
+    text-align: center;
+    font-family: Inter, Thin;
+
+    position: absolute;
+    bottom: 110px;
+    right: 110px;
+}
+
+#aboutMeMV>div:first-child>p{
+    width: 300px;
+    color: white;
+    font-family: Inter, Thin;
+}
+
+#aboutMeMV>div:nth-child(2)>p{
+    width: 300px;
+    color: white;
+    font-family: Inter, Thin;
+}
+
+
+/*---------------------------Photo Gallery------------------------*/
+
+#galleryMain{
+    position: relative;
+    height: 610px;
+    background: black;
+
+    z-index: -2;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    animation: fadeBackground 5s infinite;
+}
+
+#galleryMain>main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+#galleryMain>main>div>span>img{
+    width: 200px;
+}
+
+/*Gallery Topic*/
+#galTopic{
+    position: absolute;
+    gap: 10px;
+    top: 20px;
+    left: 560px;
+}
+
+#galTopic>div{
+    color: white;
+    font-size: 32px;
+    font-family: Inter, Thin;
+
+    display: inline-block;
+}
+
+
+#galTopic>div:nth-child(2){
+    color:#50DBEE;
+    font-size: 48px;
+}
+
+/*Images*/
+
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+
+    animation: galleryAnimate 20s linear infinite;
+}
+
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px -webkit-linear-gradient(transparent,transparent,#0004);
+}
+
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#galIG{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#galIG>img{
+    width: 30px;
+}
+
+
+
+/*-----------------------Education-----------------------*/
+
+#educationMain{
+    position: relative;
+    height: 1350px;
+
+    z-index: -2;
+
+    background: linear-gradient(45deg,#01141C,#000000,#000000,#031C27);
+}
+
+/*Topic*/
+#eduTopic{
+    font-size: 40px;
+    color: #50DBEE ;
+    font-family: Inter, Thin;
+
+    width: 500px;
+    height: 500px;
+
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+
+#eduTopic>div:nth-child(2){
+    font-size: 13px;
+    color: white;
+    width: 400px;
+
+    text-align: left;
+}
+
+#eduTopic>img{
+    width: 450px;
+
+    position: absolute;
+    right: 80px;
+    opacity: 50%;
+}
+
+/*Boxes*/
+#eduBoxes{
+    position: relative;
+    color: white;
+
+    height: 500px;
+    width: 800px;
+
+    left: 500px;
+    top: 50px;
+}
+
+.eduBox{
+    width: 175px;
+    height: 200px;
+    background: #011D26;
+    border: 2px solid #00FFFF;
+    border-radius: 30px;
+
+    font-family: 'Inter', sans-serif;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: absolute;
+
+}
+
+#eduBoxes>div:first-child{
+    left: 75px;
+    top: 40px;
+}
+
+#eduBoxes>div:nth-child(2){
+    left: 310px;
+    top: 40px;
+}
+
+#eduBoxes>div:nth-child(3){
+    right: 75px;
+    top: 40px;
+}
+
+#eduBoxes>div:nth-child(4){
+    bottom: 30px;
+    left: 200px;
+}
+
+#eduBoxes>div:nth-child(5){
+    bottom: 30px;
+    right: 200px;
+}
+
+/*Boxes Icons*/
+.eduIcon{
+    width: 55px;
+    height: 55px;
+    background: #147955;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px auto 0;
+
+}
+
+.eduIcon>img{
+    width: 40px;
+}
+
+.eduBox>div:nth-child(2){
+    margin-top: 30px;
+    font-size: 26px;
+}
+
+.eduBox>div:nth-child(3){
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.eduBox:nth-child(1) .eduIcon {
+    background-color: #9E1212;
+}
+
+.eduBox:nth-child(3) .eduIcon {
+    background-color: #133C62;
+}
+
+.eduBox:nth-child(5) .eduIcon {
+    background-color: #8C6C17;
+}
+
+
+/*----------------Achievements---------------------*/
+
+#acheivementsSection{
+    position: relative;
+    color: white;
+
+}
+
+#acheivementsSection>h1{
+    position: absolute;
+
+    left: 40px;
+    top: 0px;
+}
+
+#acheivementsSection>.achImg{
+    width: 350px;
+    height: 250px;
+
+    font-size: 13px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: absolute;
+
+    overflow: hidden;
+}
+
+/*Images*/
+#acheivementsSection>.achImg>img{
+    width: 300px;
+    height: 150px;
+
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+#acheivementsSection>.achImg:nth-child(6)>img {
+    object-position: 50% 40%;
+}
+
+#acheivementsSection>.achImg:nth-child(9)>img {
+    object-position: 50% 25%;
+}
+
+
+#acheivementsSection>.achImg:nth-child(2){
+    left: 50px;
+    top: 100px;
+}
+
+#acheivementsSection>.achImg:nth-child(3){
+    left: 500px;
+    top: 100px;
+}
+
+#acheivementsSection>.achImg:nth-child(4){
+    height: 500px;
+    left: 950px;
+    top: 100px;
+}
+
+#acheivementsSection>.achImg:nth-child(4)>img{
+    height: 400px;
+}
+
+#acheivementsSection>.achImg:nth-child(5){
+    left: 50px;
+    top: 350px;
+}
+
+#acheivementsSection>.achImg:nth-child(6){
+    left: 500px;
+    top: 350px;
+}
+
+#acheivementsSection>.achImg:nth-child(7){
+    left: 50px;
+    top: 600px;
+}
+
+#acheivementsSection>.achImg:nth-child(8){
+    left: 500px;
+    top: 600px;
+}
+
+#acheivementsSection>.achImg:nth-child(9){
+    left: 950px;
+    top: 600px;
+}
+
+
+
+
+
+
+
+
+
+
