@@ -25,16 +25,27 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!--Photo Gallery-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet"'>
 
 
     <style>
-
+        /*Scroll*/
         @keyframes scroll_image {
             from {
             }
             to {
                 transform: translateY(10px);
+            }
+        }
+
+        /*Gallery*/
+        @keyframes galleryAnimate {
+            0%{
+                transform: perspective(1000px) rotateY(0deg);
+            }
+            100%{
+                transform: perspective(1000px) rotateY(360deg);
             }
         }
     </style>
@@ -193,30 +204,27 @@
             <div>Photo</div>
             <div>Gallery</div>
         </div>
-        <!--images-->
-        <div>
-            <img src="assets/my-images/img2.webp" title="Dion" alt="Dion image" width="500px">
-        </div>
-        <div>
-            <img src="assets/my-images/img4.jpg" title="Dion" alt="Dion image">
-        </div>
-        <div>
-            <img src="assets/my-images/img5.jpeg" title="Dion" alt="Dion image" width="500px">
-        </div>
-        <div>
-            <img src="assets/my-images/img9.jpg" title="Dion" alt="Dion image">
-        </div>
-        <div>
-            <img src="assets/my-images/img10.jpeg" title="Dion" alt="Dion image">
-        </div>
-        <div>
-            <img src="assets/my-images/img11.jpeg" title="Dion" alt="Dion image">
-        </div>
 
+        <!--images-->
+        <main>
+            <div class="box">
+                <span style="--i:1"><img src="assets/my-images/img2.webp"></span>
+                <span style="--i:2"><img src="assets/my-images/img4.jpg"></span>
+                <span style="--i:3"><img src="assets/my-images/img5.jpeg"></span>
+                <span style="--i:4"><img src="assets/my-images/img9.jpg"></span>
+                <span style="--i:5"><img src="assets/my-images/img14.jpeg"></span>
+                <span style="--i:6"><img src="assets/my-images/img11.jpeg"></span>
+                <span style="--i:7"><img src="assets/my-images/img12.jpeg"></span>
+                <span style="--i:8"><img src="assets/my-images/img13.jpeg"></span>
+            </div>
+        </main>
         <!--instagram-->
         <div>
             <img src="assets/icons/insta.png" title="instagram" alt="instagram">
         </div>
+
+        <!------------>
+
 
     </main>
 
@@ -228,7 +236,7 @@
 
 
         <!--topic-->
-        <div>
+        <div id="eduTopic">
             <div>Education</div>
             <div>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores ecessitatibus </div>
 
