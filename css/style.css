@@ -1048,6 +1048,36 @@ header>nav>a:hover{
 
 
 /*----------------------Project-----------------------*/
+#projectMain{
+    border: 1px solid red;
+    height: 1000px;
+
+    position: relative;
+
+    z-index: -2;
+}
+
+#projTopic{
+    position: absolute;
+
+    color:#50DBEE;
+    font-size: 40px;
+    font-family: Inter, Thin;
+
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+    width: 1250px;
+}
+
+#projTopic>p{
+    color: white;
+    font-size: 14px;
+}
+
 
 
 
