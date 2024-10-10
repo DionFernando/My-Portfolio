@@ -737,7 +737,7 @@ header>nav>a:hover{
 /*--------------------------Skills--------------------------------*/
 
 #skillMain{
-    height: 640px;
+    height: 750px;
     background: linear-gradient(#01141C,#000000,#000000,#031C27);
     position: relative;
 
@@ -927,6 +927,34 @@ header>nav>a:hover{
 }
 
 
+/*Softwares*/
+
+#skillSoftwares{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    position: relative;
+
+    margin-top: 150px;
+}
+
+.sBox{
+    width: 50px;
+    height: 60px;
+    background: #021C2B;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sBox>img{
+    width: 40px;
+}
 
 
 
