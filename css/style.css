@@ -737,8 +737,8 @@ header>nav>a:hover{
 /*--------------------------Skills--------------------------------*/
 
 #skillMain{
-    border: 1px solid red;
-    height: 610px;
+    height: 640px;
+    background: linear-gradient(#01141C,#000000,#000000,#031C27);
     position: relative;
 
     z-index: -2;
@@ -904,6 +904,28 @@ header>nav>a:hover{
     font-family: Inter, Thin;
     color: white;
 }
+
+/*CV Button*/
+#cvBtn{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 40px;
+}
+
+#cvBtn>button{
+    width: 200px;
+    height: 40px;
+
+    border: 2px solid #50DBEE;
+    border-radius: 30px;
+    background: rgba(0, 255, 240,0.1);
+
+    color: #00F0FF;
+    font-family: Inter, Thin;
+    font-size: 14px;
+}
+
 
 
 
