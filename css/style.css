@@ -958,6 +958,96 @@ header>nav>a:hover{
 
 
 
+/*-------------------------Assignments-----------------------*/
+
+#assignmentsMain{
+    height: 610px;
+    background: linear-gradient(#000000,#01141C,#01141C,#000000);
+
+    position: relative;
+
+    z-index: -2;
+}
+
+#asTopic{
+    position: absolute;
+
+    left: 150px;
+    top: 200px;
+
+    color: #50DBEE;
+    font-family: Inter, Thin;
+    text-align: right;
+}
+
+#asTopic>h4{
+    color: white;
+}
+
+#asTopic>button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid #00C2FF;
+    background: rgba(21, 242, 242, 0.1);
+
+    color: white;
+    font-size:10px;
+
+    margin-top: 50px;
+}
+
+/*assignment Categories*/
+#asCategories{
+    width: 950px;
+    height: 500px;
+
+    position: relative;
+    left: 350px;
+    top: 70px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+}
+
+#asCategories>.asCatContainer{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #00F0FF;
+    border-radius: 30px;
+    background: #09212F;
+}
+.bgS {
+    position: absolute;
+    left: 130px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    z-index: -1;
+}
+
+.bgS:first-child{
+    margin-top: -20px;
+}
+
+.bgS:nth-child(2){
+    margin-top: 250px;
+}
+
+.bgS>.asBgSq{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.1);
+}
+
+
+
+
 
 
 
