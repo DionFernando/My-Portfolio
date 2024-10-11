@@ -1321,6 +1321,50 @@ header>nav>a:hover{
     margin-left: 50px;
 }
 
+/*Services*/
+#hmServices{
+    position: relative;
+    width: 800px;
+
+    left: 500px;
+    top: -85px;
+}
+
+#hmServices>div:first-child{
+    color: #00F0FF;
+    font-size: 18px;
+}
+
+#hmSContainers{
+    display: flex;
+    gap: 10px;
+}
+
+.servicesContainer{
+    width: 130px;
+    height: 50px;
+    background: #005E73;
+    font-size: 12px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 5px;
+
+}
+
+.servicesContainer>img{
+    width: 30px;
+    align-self: center;
+}
+
+.servicesContainer>div{
+    text-align: center;
+    width: 50%;
+    word-wrap: break-word;
+}
 
 
 
