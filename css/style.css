@@ -1263,9 +1263,9 @@ header>nav>a:hover{
 
 /*---------------------------Hire Me-------------------------------*/
 #hmMain{
-    border: 1px solid red;
     position: relative;
     height: 610px;
+    background: linear-gradient(#00070B,#00070B,#00070B,#031C27);
 
     color: white;
 
@@ -1273,7 +1273,7 @@ header>nav>a:hover{
 }
 
 #hmSection{
-    border: 1px solid blue;
+    border: 1px solid transparent;
     position: relative;
     height: 300px;
 }
@@ -1288,7 +1288,7 @@ header>nav>a:hover{
 
     position: absolute;
     margin-top: 30px;
-    left: 50px;
+    left: 70px;
 }
 
 #hmTopic>div:nth-child(2){
@@ -1307,7 +1307,7 @@ header>nav>a:hover{
 
     position: absolute;
     top: 90px;
-    left: 50px;
+    left: 70px;
 }
 
 #whm>div:nth-child(2){
@@ -1318,7 +1318,7 @@ header>nav>a:hover{
     width: 280px;
     font-size: 12px;
     margin-top: 120px;
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 /*Services*/
@@ -1326,7 +1326,7 @@ header>nav>a:hover{
     position: relative;
     width: 800px;
 
-    left: 500px;
+    left: 490px;
     top: -85px;
 }
 
@@ -1376,7 +1376,7 @@ header>nav>a:hover{
     width: 1200px;
     border: 3px solid #0085FF;
     border-radius: 25px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 163, 255, 0.1);
 
     display: flex;
     align-items: center;
