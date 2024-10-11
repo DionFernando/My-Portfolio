@@ -1059,7 +1059,7 @@ header>nav>a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+
 
 }
 
@@ -1150,7 +1150,68 @@ header>nav>a:hover{
     border: 1px solid red;
 
     z-index: -2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    color: white;
+    font-family: Inter, Thin;
 }
+
+#ytTopic{
+    position: absolute;
+
+    color: white;
+    top: 0;
+
+    display: flex;
+}
+
+#ytTopic>img{
+    width: 75px;
+    height: 75px;
+}
+
+/*Yt Section*/
+
+#ytSection{
+    position: relative;
+    border: 1px solid green;
+
+    height: 600px;
+
+    top: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+}
+
+#ytSection>.ytSec{
+    border: 1px solid blue;
+
+    text-align: center;
+}
+
+/*logo*/
+#ytSection>.ytSec>div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#ytSection>.ytSec>div:first-child>img{
+    width: 65px;
+    border-radius: 100%;
+}
+
+#ytSection>.ytSec:nth-child(2)>div:first-child>img{
+    border: 1px solid lime;
+}
+
 
 
 
