@@ -1262,8 +1262,64 @@ header>nav>a:hover{
 
 
 /*---------------------------Hire Me-------------------------------*/
+#hmMain{
+    border: 1px solid red;
+    position: relative;
+    height: 610px;
 
+    color: white;
 
+    z-index: -2;
+}
+
+#hmSection{
+    border: 1px solid blue;
+    position: relative;
+    height: 300px;
+}
+
+#hmTopic{
+    color: #00F0FF;
+    font-size: 40px;
+
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+
+    position: absolute;
+    margin-top: 30px;
+    left: 50px;
+}
+
+#hmTopic>div:nth-child(2){
+    color: white;
+    font-size: 24px;
+}
+
+/*Why Hire Me*/
+#whm{
+    color: #00F0FF;
+    font-size: 18px;
+
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+
+    position: absolute;
+    top: 90px;
+    left: 50px;
+}
+
+#whm>div:nth-child(2){
+    color: white;
+}
+
+#hmSection p{
+    width: 280px;
+    font-size: 12px;
+    margin-top: 120px;
+    margin-left: 50px;
+}
 
 
 
