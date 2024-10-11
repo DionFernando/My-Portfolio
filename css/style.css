@@ -1049,7 +1049,7 @@ header>nav>a:hover{
 
 /*----------------------Project-----------------------*/
 #projectMain{
-    height: 1300px;
+    height: 1200px;
     background: linear-gradient(#000000,#000000,#000000,#01141C);
 
     position: relative;
@@ -1093,7 +1093,7 @@ header>nav>a:hover{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
-    margin-top: 250px;
+    margin-top: 150px;
 
     justify-items: center;
 
@@ -1139,6 +1139,17 @@ header>nav>a:hover{
     font-size: 12px;
 
     margin-top: 20px;
+}
+
+
+
+/*---------------------YouTube--------------------------*/
+#ytMain{
+    position: relative;
+    height: 610px;
+    border: 1px solid red;
+
+    z-index: -2;
 }
 
 
