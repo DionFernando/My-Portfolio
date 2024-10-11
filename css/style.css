@@ -1147,7 +1147,7 @@ header>nav>a:hover{
 #ytMain{
     position: relative;
     height: 610px;
-    border: 1px solid red;
+    background: linear-gradient(#000000,#000000, #000000,#5e0303);
 
     z-index: -2;
 
@@ -1164,7 +1164,7 @@ header>nav>a:hover{
     position: absolute;
 
     color: white;
-    top: 0;
+    top: 30px;
 
     display: flex;
 }
@@ -1178,11 +1178,10 @@ header>nav>a:hover{
 
 #ytSection{
     position: relative;
-    border: 1px solid green;
 
     height: 600px;
 
-    top: 30px;
+    top: 80px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1191,7 +1190,7 @@ header>nav>a:hover{
 }
 
 #ytSection>.ytSec{
-    border: 1px solid blue;
+    width: 500px;
 
     text-align: center;
 }
@@ -1211,6 +1210,46 @@ header>nav>a:hover{
 #ytSection>.ytSec:nth-child(2)>div:first-child>img{
     border: 1px solid lime;
 }
+
+.ytVideo{
+    position: relative;
+    margin-top: 20px;
+}
+
+.ytVideo>img:first-child{
+    width: 450px;
+    height: 250px;
+
+    border: 5px solid red;
+    border-radius: 20px;
+
+    object-fit: cover;
+}
+
+.ytVideo img:nth-child(2) {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ytSec>div:nth-child(3)>p{
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.ytSec button{
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid #FF0000;
+    background: rgba(0,0,0,0.3);
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
 
 
 
