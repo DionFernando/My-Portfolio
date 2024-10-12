@@ -1396,17 +1396,52 @@ header>nav>a:hover{
     font-size: 10px;
 }
 
+/*Hire Me Contact*/
+#hmContactInfo{
+    border: 1px solid red;
+    position: relative;
+    width: 400px;
 
+    left: 100px;
+    margin-top: 20px;
+}
 
+#hmCont{
+    position: relative;
+}
 
+#hmCont>div:first-child{
+    color: #50DBEE;
+    font-size: 20px;
+}
 
+.hmCI{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
 
+    font-size: 14px;
 
+    gap: 10px;
 
+    margin-top: 20px;
+}
 
+.hmCI img{
+    width: 30px;
+}
 
+/*Other Links*/
+#hmOtherLinks{
+    position: absolute;
 
+    display: flex;
+}
 
+#hmOtherLinks img{
+    width: 30px;
+}
 
 
 
