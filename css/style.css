@@ -2,7 +2,7 @@
     font-family: "Francois One", sans-serif;
 }
 body{
-    background-color: #828282;
+    background-color: black;
 }
 
 /*---------------------------- Navigation ----------------------------*/
@@ -1500,6 +1500,22 @@ header>nav>a:hover{
     font-size: 12px;
     border-radius: 20px;
     border: none;
+}
+
+
+
+/*--------------------Footer--------------------------*/
+#footerMain{
+    position: relative;
+    border: 1px solid red;
+
+    color: white;
+}
+
+#footerMain>img{
+    opacity: 50%;
+    position: absolute;
+    z-index: -2;
 }
 
 
