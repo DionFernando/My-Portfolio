@@ -1542,7 +1542,6 @@ header>nav>a:hover{
 
 #footerNav>a{
     color: white;
-
 }
 
 /*Middle Section*/
@@ -1579,20 +1578,83 @@ header>nav>a:hover{
 /*Footer*/
 #footer{
     position: relative;
+
 }
 
 #footerBox{
     width: 0;
     height: 0;
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
+    border-left: calc(50vw - 8px) solid transparent; /* Adjusted for scrollbar width */
+    border-right: calc(50vw - 8px) solid transparent; /* Adjusted for scrollbar width */
     border-bottom: 250px solid black;
 }
 
+#footerBox>div:first-child>img{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+/*Footer Icons*/
+#footerIcons{
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
 
+    gap: 50px;
+}
 
+#footerIcons>img{
+    width: 30px;
+}
 
+#footerBottom{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -200px;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#footerBottom div{
+    margin-top: 60px;
+}
+
+.divL{
+    margin-left: 50px;
+}
+
+.divM{
+    text-align: center;
+    flex-grow: 1;
+}
+
+.divR{
+    margin-right: 60px;
+}
+
+#footerBox span{
+    width: 1200px;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+
+    position: absolute;
+    top: 330px;
+    left: 75px;
+    z-index: 1;
+}
 
 
 
