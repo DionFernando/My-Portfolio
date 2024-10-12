@@ -1507,12 +1507,12 @@ header>nav>a:hover{
 /*--------------------Footer--------------------------*/
 #footerMain{
     position: relative;
-    border: 1px solid red;
 
     color: white;
 }
 
 #footerMain>img{
+    height: 550px;
     opacity: 50%;
     position: absolute;
     z-index: -2;
@@ -1574,6 +1574,19 @@ header>nav>a:hover{
     font-size: 20px;
     margin-top: 40px;
     color: #1097B5;
+}
+
+/*Footer*/
+#footer{
+    position: relative;
+}
+
+#footerBox{
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-bottom: 250px solid black;
 }
 
 
