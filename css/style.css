@@ -1448,6 +1448,46 @@ header>nav>a:hover{
     width: 30px;
 }
 
+/*--Form--*/
+#hmForm{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+
+    left: 500px;
+    top: 30px;
+
+}
+
+.hmFL{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.hmFL>input{
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+
+    margin-top: 10px;
+}
+
+.hmFL:nth-child(2){
+    position: absolute;
+    left: 300px;
+    top: 0;
+}
+
+.hmFL>textarea{
+    width: 500px;
+    height: 80px;
+    border-radius: 20px;
+    border: none;
+
+    margin-top: 10px;
+}
+
 
 
 
