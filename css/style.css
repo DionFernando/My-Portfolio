@@ -1264,7 +1264,7 @@ header>nav>a:hover{
 /*---------------------------Hire Me-------------------------------*/
 #hmMain{
     position: relative;
-    height: 1200px;
+    height: 780px;
     background: linear-gradient(#00070B,#00070B,#00070B,#031C27);
 
     color: white;
@@ -1400,7 +1400,7 @@ header>nav>a:hover{
 #hmContactInfo{
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 410px;
 
     left: 100px;
     margin-top: 20px;
@@ -1486,6 +1486,20 @@ header>nav>a:hover{
     border: none;
 
     margin-top: 10px;
+}
+
+/*Button*/
+#hmForm>button{
+    margin-top: 20px;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+
+    background: #005E73;
+    color: white;
+    font-size: 12px;
+    border-radius: 20px;
+    border: none;
 }
 
 
