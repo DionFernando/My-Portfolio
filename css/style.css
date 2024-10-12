@@ -1518,6 +1518,66 @@ header>nav>a:hover{
     z-index: -2;
 }
 
+/*Footer Section*/
+#footerSection{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+    top: 80px;
+    height: 300px;
+
+    gap: 100px;
+}
+
+
+/*Navigations*/
+#footerNav{
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for links */
+    gap: 20px;
+}
+
+#footerNav>a{
+    color: white;
+
+}
+
+/*Middle Section*/
+#footerMS{
+    text-align: center;
+    width: 300px;
+}
+
+#footerMS>p{
+    font-size: 18px;
+    text-align: left;
+    margin-top: 0;
+}
+
+#footerMS>div{
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+#footerRS{
+    text-align: center;
+}
+
+#footerRS>div:first-child{
+    font-size: 48px;
+}
+
+#footerRS>div:nth-child(2){
+    font-size: 20px;
+    margin-top: 40px;
+    color: #1097B5;
+}
+
+
+
 
 
 
