@@ -1264,7 +1264,7 @@ header>nav>a:hover{
 /*---------------------------Hire Me-------------------------------*/
 #hmMain{
     position: relative;
-    height: 610px;
+    height: 1200px;
     background: linear-gradient(#00070B,#00070B,#00070B,#031C27);
 
     color: white;
@@ -1398,9 +1398,9 @@ header>nav>a:hover{
 
 /*Hire Me Contact*/
 #hmContactInfo{
-    border: 1px solid red;
     position: relative;
-    width: 400px;
+    width: 300px;
+    height: 400px;
 
     left: 100px;
     margin-top: 20px;
@@ -1437,11 +1437,20 @@ header>nav>a:hover{
     position: absolute;
 
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+
 }
 
 #hmOtherLinks img{
     width: 30px;
 }
+
+
+
+
 
 
 
