@@ -154,6 +154,7 @@ header>nav>a:hover{
 #homeMain{
     width: 100%;
     position: relative;
+
 }
 
 /*Welcome*/
@@ -274,13 +275,15 @@ header>nav>a:hover{
 #aboutMeTopic>div:first-child{
     font-size: 32px;
     color: white;
-    font-family: Inter, Thin;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 
 #aboutMeTopic>div:nth-child(2){
     font-size: 48px;
     color: #50DBEE;
-    font-family: Inter, Bold, serif;
+    font-family: 'Inter';
+    font-weight: 700;
 }
 
 
@@ -301,7 +304,6 @@ header>nav>a:hover{
 #aboutMeInfoBox>div{
     font-size: 14px;
     color: white;
-    font-family: Inter, Thin;
 
     position: absolute;
     display: flex;
@@ -314,17 +316,9 @@ header>nav>a:hover{
     top: 15px;
 }
 
-#aboutMeInfoBox>div:first-child>div:nth-child(2){
-    font-family: Inter, Thin;
-}
-
 #aboutMeInfoBox>div:nth-child(2){
     left: 400px;
     top: 15px;
-}
-
-#aboutMeInfoBox>div:nth-child(2)>div:nth-child(2){
-    font-family: Inter, Thin;
 }
 
 #aboutMeInfoBox>div:nth-child(3){
@@ -332,17 +326,9 @@ header>nav>a:hover{
     top: 50px;
 }
 
-#aboutMeInfoBox>div:nth-child(3)>div:nth-child(2){
-    font-family: Inter, Thin;
-}
-
 #aboutMeInfoBox>div:nth-child(4){
     left: 400px;
     top: 50px;
-}
-
-#aboutMeInfoBox>div:nth-child(4)>div:nth-child(2){
-    font-family: Inter, Thin;
 }
 
 #aboutMeInfoBox>div:nth-child(5){
@@ -350,17 +336,20 @@ header>nav>a:hover{
     top: 85px;
 }
 
-#aboutMeInfoBox>div:nth-child(5)>div:nth-child(2){
-    font-family: Inter, Thin;
-}
-
 #aboutMeInfoBox>div:nth-child(6){
     left: 400px;
     top: 85px;
+
 }
 
-#aboutMeInfoBox>div:nth-child(6)>div:nth-child(2){
-    font-family: Inter, Thin;
+.aboutMediv1{
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+.aboutMediv2{
+    font-family: 'Inter';
+    font-weight: 200;
 }
 
 
@@ -375,7 +364,8 @@ header>nav>a:hover{
     right: 65px;
 }
 #aboutMePara>p{
-    font-family: Inter, Thin;
+    font-family: 'Inter';
+    font-weight: 200;
     font-size: 12px;
     color: white;
 }
@@ -386,24 +376,24 @@ header>nav>a:hover{
     color: #00FFF0;
     font-size: 12px;
     text-align: center;
-    font-family: Inter, Thin;
 
     position: absolute;
     bottom: 110px;
     right: 110px;
 }
 
-#aboutMeMV>div:first-child>p{
-    width: 300px;
-    color: white;
-    font-family: Inter, Thin;
+#aboutMeMV>div>div:first-child{
+    font-family: 'Inter';
+    font-weight: 500;
 }
 
-#aboutMeMV>div:nth-child(2)>p{
-    width: 300px;
+#aboutMeMV>div>p{
+    width: 290px;
     color: white;
-    font-family: Inter, Thin;
+    font-family: 'Inter';
+    font-weight: 100;
 }
+
 
 
 /*---------------------------Photo Gallery------------------------*/
@@ -444,7 +434,8 @@ header>nav>a:hover{
 #galTopic>div{
     color: white;
     font-size: 32px;
-    font-family: Inter, Thin;
+    font-family: 'Inter';
+    font-weight: 400;
 
     display: inline-block;
 }
@@ -453,6 +444,7 @@ header>nav>a:hover{
 #galTopic>div:nth-child(2){
     color:#50DBEE;
     font-size: 48px;
+    font-weight: 800;
 }
 
 /*Images*/
@@ -514,7 +506,6 @@ header>nav>a:hover{
 #eduTopic{
     font-size: 40px;
     color: #50DBEE ;
-    font-family: Inter, Thin;
 
     width: 500px;
     height: 500px;
@@ -524,7 +515,14 @@ header>nav>a:hover{
     top: 30px;
 }
 
+#eduTopic>div{
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
 #eduTopic>div:nth-child(2){
+    margin-top: 10px;
+    font-weight: 200;
     font-size: 13px;
     color: white;
     width: 400px;
@@ -533,11 +531,11 @@ header>nav>a:hover{
 }
 
 #eduTopic>img{
-    width: 450px;
+    width: 400px;
 
     position: absolute;
-    right: 80px;
-    opacity: 50%;
+    right: 90px;
+    opacity: 40%;
 }
 
 /*Boxes*/
@@ -558,8 +556,6 @@ header>nav>a:hover{
     background: #011D26;
     border: 2px solid #00FFFF;
     border-radius: 30px;
-
-    font-family: 'Inter', sans-serif;
 
     align-items: center;
     justify-content: center;
@@ -592,6 +588,16 @@ header>nav>a:hover{
 #eduBoxes>div:nth-child(5){
     bottom: 30px;
     right: 200px;
+}
+
+.eduBox>div:nth-child(2){
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+.eduBox>div:nth-child(3){
+    font-family: 'Inter';
+    font-weight: 200;
 }
 
 /*Boxes Icons*/
@@ -647,8 +653,12 @@ header>nav>a:hover{
 #acheivementsSection>h1{
     position: absolute;
 
-    left: 40px;
+    left: 50px;
     top: 0px;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 30px;
 }
 
 #acheivementsSection>.achImg{
@@ -732,6 +742,11 @@ header>nav>a:hover{
     top: 600px;
 }
 
+.achImg>p{
+    font-family: 'Inter';
+    font-weight: 150;
+}
+
 
 
 /*--------------------------Skills--------------------------------*/
@@ -758,19 +773,23 @@ header>nav>a:hover{
 
 #skillTopic{
     color: #50DBEE;
-    font-family: Inter, Thin;
 
     align-items: center;
     text-align: center;
 
     position: absolute;
 }
+#skillTopic>h1{
+    font-family: 'Inter';
+    font-weight: 800;
+}
 
 #skillTopic>p{
     margin-top: -15px;
     color: white;
     font-size: 12px;
-    font-family: Inter, Thin;
+    font-family: 'Inter';
+    font-weight: 100;
 }
 
 /*Progress bars*/
@@ -972,16 +991,22 @@ header>nav>a:hover{
 #asTopic{
     position: absolute;
 
-    left: 150px;
+    left: 100px;
     top: 200px;
 
     color: #50DBEE;
-    font-family: Inter, Thin;
     text-align: right;
+}
+
+#asTopic>h1{
+    font-family: 'Inter';
+    font-weight: 800;
 }
 
 #asTopic>h4{
     color: white;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 
 #asTopic>button{
@@ -993,6 +1018,8 @@ header>nav>a:hover{
 
     color: white;
     font-size:10px;
+    font-family: 'Inter';
+    font-weight: 300;
 
     margin-top: 50px;
 }
@@ -1068,7 +1095,6 @@ header>nav>a:hover{
 
     color:#50DBEE;
     font-size: 40px;
-    font-family: Inter, Thin;
 
     top: 10%;
     left: 50%;
@@ -1078,9 +1104,17 @@ header>nav>a:hover{
     width: 1250px;
 }
 
+#projTopic>div{
+    font-family: 'Inter';
+    font-weight: 800;
+}
+
 #projTopic>p{
     color: white;
     font-size: 14px;
+
+    font-family: 'Inter';
+    font-weight: 100;
 }
 
 /*Project Containers*/
@@ -1123,10 +1157,15 @@ header>nav>a:hover{
 
 #projContainers>.projCont>div:nth-child(2)>h4{
     margin-top: 40px;
+
+    font-family: 'Inter';
+    font-weight: 800;
 }
 #projContainers>.projCont>div:nth-child(2)>p{
-    margin-top: 10px;
+    margin: 10px;
     font-size: 10px;
+    font-family: 'Inter';
+    font-weight: 200;
 }
 
 #projContainers>.projCont>button{
@@ -1137,6 +1176,8 @@ header>nav>a:hover{
     background: transparent;
     color: white;
     font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 400;
 
     margin-top: 20px;
 }
@@ -1157,7 +1198,6 @@ header>nav>a:hover{
     min-height: 100vh;
 
     color: white;
-    font-family: Inter, Thin;
 }
 
 #ytTopic{
@@ -1235,8 +1275,11 @@ header>nav>a:hover{
 }
 
 .ytSec>div:nth-child(3)>p{
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 30px;
+
+    font-family: 'Inter';
+    font-weight: 100;
 }
 
 .ytSec button{
