@@ -166,7 +166,8 @@ nav:hover a:not(:hover) {
 }
 
 #homeMain>section{
-
+    position: relative;
+    z-index: -2;
 }
 
 /*Welcome*/
@@ -604,6 +605,10 @@ nav:hover a:not(:hover) {
 
     position: absolute;
 
+}
+
+.eduBox:hover{
+    border: 2px solid red;
 }
 
 #eduBoxes>div:first-child{
