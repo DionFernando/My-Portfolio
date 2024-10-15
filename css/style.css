@@ -165,6 +165,10 @@ nav:hover a:not(:hover) {
 
 }
 
+#homeMain>section{
+
+}
+
 /*Welcome*/
 #homeMain>section>div{
     font-size: 55px;
@@ -400,6 +404,35 @@ nav:hover a:not(:hover) {
     color: white;
     font-family: 'Inter';
     font-weight: 100;
+}
+
+/*--Responsive--*/
+
+
+
+/* Media query for smaller screens (e.g., tablets and mobile phones) */
+@media (max-width: 768px) {
+    #aboutMeMain {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #aboutMeMain .left {
+        order: 2;
+    }
+
+    #aboutMeMain .right {
+        order: 1;
+        text-align: center;
+    }
+
+    .projects .project {
+        display: block; /* Stack project elements vertically */
+    }
+
+    .projects .project img {
+        margin-bottom: 20px;
+    }
 }
 
 
