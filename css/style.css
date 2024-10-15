@@ -68,7 +68,17 @@ header>nav>a:hover{
 }
 
 
+nav a {
+    transition: filter 0.3s ease; /* Add a smooth transition for the blur effect */
+}
 
+nav a:hover {
+    filter: blur(0px); /*  The hovered item remains sharp */
+}
+
+nav:hover a:not(:hover) {
+    filter: blur(1px); /*  Blur the rest of the items */
+}
 /*---------------------------- Paralax Scene ----------------------------*/
 
 #ParalaxScene>div{
