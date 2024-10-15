@@ -63,22 +63,20 @@ header>nav>a:nth-child(9){
 }
 
 /*--Links Hover--*/
-header>nav>a:hover{
-    color: #50DBEE;
-}
-
-
 nav a {
-    transition: filter 0.3s ease; /* Add a smooth transition for the blur effect */
+    transition: filter 0.3s ease;
 }
 
 nav a:hover {
-    filter: blur(0px); /*  The hovered item remains sharp */
+    color: #50DBEE;
+    filter: blur(0px);
+    text-shadow: 0 0 20px rgba(25, 90, 140,1);
 }
 
 nav:hover a:not(:hover) {
-    filter: blur(1px); /*  Blur the rest of the items */
+    filter: blur(1px);
 }
+
 /*---------------------------- Paralax Scene ----------------------------*/
 
 #ParalaxScene>div{
