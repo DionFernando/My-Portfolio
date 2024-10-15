@@ -1333,10 +1333,16 @@ header>nav>a:hover{
     margin-top: 30px;
     left: 70px;
 }
+#hmTopic>div:nth-child(1){
+    font-family: 'Inter';
+    font-weight: 800;
+}
 
 #hmTopic>div:nth-child(2){
     color: white;
     font-size: 24px;
+    font-family: 'Inter';
+    font-weight: 300;
 }
 
 /*Why Hire Me*/
@@ -1353,8 +1359,16 @@ header>nav>a:hover{
     left: 70px;
 }
 
+#whm>div:nth-child(1){
+    font-family: 'Inter';
+    font-weight: 500;
+
+}
+
 #whm>div:nth-child(2){
     color: white;
+    font-family: 'Inter';
+    font-weight: 500;
 }
 
 #hmSection p{
@@ -1362,6 +1376,10 @@ header>nav>a:hover{
     font-size: 12px;
     margin-top: 120px;
     margin-left: 70px;
+
+    font-family: 'Inter';
+    font-weight: 200;
+
 }
 
 /*Services*/
@@ -1376,6 +1394,10 @@ header>nav>a:hover{
 #hmServices>div:first-child{
     color: #00F0FF;
     font-size: 18px;
+
+    font-family: 'Inter';
+    font-weight: 600;
+
 }
 
 #hmSContainers{
@@ -1456,6 +1478,10 @@ header>nav>a:hover{
 #hmCont>div:first-child{
     color: #50DBEE;
     font-size: 20px;
+
+    font-family: 'Inter';
+    font-weight: 800;
+
 }
 
 .hmCI{
@@ -1473,6 +1499,12 @@ header>nav>a:hover{
 
 .hmCI img{
     width: 30px;
+}
+
+.hmCI div{
+    font-family: 'Inter';
+    font-weight: 500;
+
 }
 
 /*Other Links*/
@@ -1585,6 +1617,8 @@ header>nav>a:hover{
 
 #footerNav>a{
     color: white;
+    font-family: 'Inter';
+    font-weight: 600;
 }
 
 /*Middle Section*/
@@ -1597,11 +1631,18 @@ header>nav>a:hover{
     font-size: 18px;
     text-align: left;
     margin-top: 0;
+
+    font-family: 'Inter';
+    font-weight: 200;
+
 }
 
 #footerMS>div{
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 50px;
+    font-family: 'Inter';
+    font-weight: 500;
+
 }
 
 #footerRS{
@@ -1614,8 +1655,11 @@ header>nav>a:hover{
 
 #footerRS>div:nth-child(2){
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 60px;
     color: #1097B5;
+    font-family: 'Inter';
+    font-weight: 800;
+
 }
 
 /*Footer*/
@@ -1673,6 +1717,9 @@ header>nav>a:hover{
 
 #footerBottom div{
     margin-top: 60px;
+
+    font-family: 'Inter';
+    font-weight: 200;
 }
 
 .divL{
