@@ -208,6 +208,10 @@ nav:hover a:not(:hover) {
 
 }
 
+#homeMain>section>button:hover{
+    border: 2px solid red;
+}
+
 /*Social Media Icons*/
 #homeMain>div:nth-child(2){
     position: absolute;
@@ -246,6 +250,7 @@ nav:hover a:not(:hover) {
     height: 610px;
     position: relative;
     background: linear-gradient(45deg, #01121A,#00090E,#000000,#000B11,#01131A);
+    overflow: hidden;
 
     z-index: -2;
 }
@@ -407,6 +412,43 @@ nav:hover a:not(:hover) {
     font-weight: 100;
 }
 
+/*circle*/
+#am-circle1{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#138D86, #011717);
+    opacity: 0.2;
+    border: none;
+
+    position: absolute;
+    top: -50px;
+    left: -50px;
+
+    z-index: 1;
+    overflow: hidden;
+
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 25px;
+}
+
+#am-circle2{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#138D86, #011717);
+    opacity: 0.2;
+    border: none;
+
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+
+    z-index: 1;
+    overflow: hidden;
+
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 25px;
+}
+
 /*--Responsive--*/
 
 
@@ -502,7 +544,7 @@ nav:hover a:not(:hover) {
     right: 20px;
 }
 
-#galIG>img{
+#galIG>a>img{
     width: 30px;
 }
 
@@ -1044,6 +1086,7 @@ nav:hover a:not(:hover) {
 
     margin-top: 50px;
 }
+
 
 /*assignment Categories*/
 #asCategories{
