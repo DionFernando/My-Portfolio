@@ -411,31 +411,6 @@ nav:hover a:not(:hover) {
 
 
 
-/* Media query for smaller screens (e.g., tablets and mobile phones) */
-@media (max-width: 768px) {
-    #aboutMeMain {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    #aboutMeMain .left {
-        order: 2;
-    }
-
-    #aboutMeMain .right {
-        order: 1;
-        text-align: center;
-    }
-
-    .projects .project {
-        display: block; /* Stack project elements vertically */
-    }
-
-    .projects .project img {
-        margin-bottom: 20px;
-    }
-}
-
 
 
 /*---------------------------Photo Gallery------------------------*/
@@ -608,7 +583,7 @@ nav:hover a:not(:hover) {
 }
 
 .eduBox:hover{
-    border: 2px solid red;
+
 }
 
 #eduBoxes>div:first-child{
@@ -1026,7 +1001,7 @@ nav:hover a:not(:hover) {
 /*-------------------------Assignments-----------------------*/
 
 #assignmentsMain{
-    height: 610px;
+    height: calc(100vh - 80px);
     background: linear-gradient(#000000,#01141C,#01141C,#000000);
 
     position: relative;
