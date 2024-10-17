@@ -1094,7 +1094,7 @@ nav:hover a:not(:hover) {
     font-weight: 400;
 }
 
-#asTopic>button{
+#asTopic>a>button{
     width: 100px;
     height: 30px;
     border-radius: 20px;
@@ -1110,7 +1110,7 @@ nav:hover a:not(:hover) {
 }
 
 
-#asTopic>button:hover{
+#asTopic>a>button:hover{
     background: #00C2FF;
     color: black;
     box-shadow: 0 0 20px #00C2FF;
@@ -1173,7 +1173,7 @@ nav:hover a:not(:hover) {
 
     position: relative;
 
-    z-index: -2;
+    z-index: 1;
 
     display: flex;
     justify-content: center;
@@ -1260,7 +1260,7 @@ nav:hover a:not(:hover) {
     font-weight: 200;
 }
 
-#projContainers>.projCont>button{
+#projContainers>.projCont>a>button{
     width: 100px;
     height: 30px;
     border: 2px solid #00F0FF;
@@ -1272,6 +1272,12 @@ nav:hover a:not(:hover) {
     font-weight: 400;
 
     margin-top: 20px;
+}
+
+#projContainers>.projCont>a>button:hover{
+    background: #00F0FF;
+    color: black;
+    box-shadow: 0 0 20px #00F0FF;
 }
 
 
@@ -1348,7 +1354,7 @@ nav:hover a:not(:hover) {
     margin-top: 20px;
 }
 
-.ytVideo>img:first-child{
+.ytVideo>a>img:first-child{
     width: 450px;
     height: 250px;
 
@@ -1358,12 +1364,17 @@ nav:hover a:not(:hover) {
     object-fit: cover;
 }
 
-.ytVideo img:nth-child(2) {
+.ytVideo>a>img:nth-child(2) {
     width: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.ytVideo>a>img:first-child:hover{
+    box-shadow: 0 0 20px red;
+    filter: brightness(0.8);
 }
 
 .ytSec>div:nth-child(3)>p{
