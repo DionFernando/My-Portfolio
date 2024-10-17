@@ -977,7 +977,7 @@ nav:hover a:not(:hover) {
 }
 
 
-#progressSection>.prog>.progCircle{
+/*#progressSection>.prog>.progCircle{
     width: 100px;
     height: 100px;
     border: 10px solid #00F0FF;
@@ -989,7 +989,81 @@ nav:hover a:not(:hover) {
     display: flex;
     justify-content: center;
     align-items: center;
+}*/
+
+#progressSection>.prog>.progCircle {
+    width: 100px;
+    height: 100px;
+    position: relative;
 }
+
+#progressSection>.prog>.progCircle:before,
+#progressSection>.prog>.progCircle:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    box-sizing: border-box;
+}
+
+/*circles progress*/
+#progressSection>.prog>.progCircle:before {
+    border-top-color: #00F0FF;
+    border-right-color: #00F0FF;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+#progressSection>.prog>.progCircle:after {
+    border-bottom-color: #00F0FF;
+    border-left-color: #00F0FF;
+    z-index: 1;
+}
+
+#progressSection>.prog:nth-child(1)>.progCircle:after {
+    transform: rotate(0deg);
+}
+
+#progressSection>.prog:nth-child(2)>.progCircle:after {
+    transform: rotate(10deg);
+}
+
+#progressSection>.prog:nth-child(3)>.progCircle:after {
+    transform: rotate(35deg);
+}
+
+#progressSection>.prog:nth-child(4)>.progCircle:after {
+    transform: rotate(-15deg);
+}
+
+#progressSection>.prog:nth-child(5)>.progCircle:after {
+    transform: rotate(20deg);
+}
+
+#progressSection>.prog:nth-child(6)>.progCircle:after {
+    transform: rotate(20deg);
+}
+
+#progressSection>.prog:nth-child(7)>.progCircle:after {
+    transform: rotate(5deg);
+}
+
+/* Centering the percentage text inside */
+#progressSection>.prog>.progCircle h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    color: white;
+    margin: 0;
+}
+
+
 
 #progressSection>.prog>h3{
     font-size: 12px;
@@ -1002,7 +1076,7 @@ nav:hover a:not(:hover) {
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #cvBtn>button{
@@ -1059,15 +1133,6 @@ nav:hover a:not(:hover) {
     width: 40px;
 }
 
-@media (max-width: 768px) {
-    #skillSection {
-        width: 90%;
-        left: 5%;
-    }
-    #progressSection>.prog {
-        width: 100px;
-    }
-}
 
 
 /*-------------------------Assignments-----------------------*/
