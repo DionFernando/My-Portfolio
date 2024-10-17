@@ -867,95 +867,6 @@ nav:hover a:not(:hover) {
 
 /*Progress bars*/
 
-/*
-.circles{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.circle{
-    margin: 2em;
-    background: #2d3239;
-    border: 1px solid #555;
-    border-radius: 50%;
-    position: relative;
-    width: 10.2em;
-    height: 10.2em;
-    color: #fff;
-    box-shadow: 0 0 1.5em rgba(0,0,0,0.6);
-    z-index: -5;
-}
-
-.circle-inner{
-    background: #282c30;
-    border-radius: inherit;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10.5em;
-    height: 10.5em;
-    box-shadow: 0 0 1.5em rgba(0,0,0,0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -3;
-}
-
-.circle-inner::before{
-    content: '';
-    background: linear-gradient(120deg,#201c21,#2f343a);
-    box-shadow: 0 0 1.5em rgba(0,0,0,0.3);
-    border-radius: inherit;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 9.5em;
-    height: 9.5em;
-    z-index: -2;
-}
-
-.circle h1{
-    font-size: 2.6em;
-}
-
-.circle svg{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-
-.progress{
-    fill: none;
-    stroke: #17c9d2;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke-dasharray: 630;
-    stroke-dashoffset: 630;
-    transition: 1s ease-in-out;
-}
-
-.circle:nth-child(2) .progress{
-    stroke: #ff2b1c;
-}
-
-.circle:nth-child(3) .progress{
-    stroke: #ff2b1c;
-}
-
-.circle:nth-child(4) .progress{
-    stroke: #ff2b1c;
-}
-.circle:nth-child(5) .progress{
-    stroke: #ff2b1c;
-}*/
-
 #progressSection{
     display: flex;
     flex-wrap: wrap;
@@ -975,21 +886,6 @@ nav:hover a:not(:hover) {
     text-align: center;
     flex-direction: column;
 }
-
-
-/*#progressSection>.prog>.progCircle{
-    width: 100px;
-    height: 100px;
-    border: 10px solid #00F0FF;
-    border-radius: 100%;
-
-    color: white;
-    font-size: 15px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
 
 #progressSection>.prog>.progCircle {
     width: 100px;
