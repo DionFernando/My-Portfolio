@@ -1696,6 +1696,7 @@ nav:hover a:not(:hover) {
 #footerMain{
     height: 100vh;
     position: relative;
+    z-index: 1;
 
     color: white;
 }
@@ -1704,7 +1705,6 @@ nav:hover a:not(:hover) {
     height: 550px;
     opacity: 50%;
     position: absolute;
-    z-index: -2;
 }
 
 /*Footer Section*/
@@ -1779,6 +1779,7 @@ nav:hover a:not(:hover) {
 /*Footer*/
 #footer{
     position: relative;
+    z-index: 1;
 
 }
 
@@ -1858,6 +1859,10 @@ nav:hover a:not(:hover) {
     top: 330px;
     left: 75px;
     z-index: 1;
+}
+
+#footerBottom>div:hover{
+    color: #00F0FF;
 }
 
 
