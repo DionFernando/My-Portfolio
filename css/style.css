@@ -1889,6 +1889,11 @@ nav:hover a:not(:hover) {
     color: white;
     font-family: 'Inter';
     font-weight: 600;
+    text-decoration: none;
+}
+
+#footerNav>a:hover{
+    color: #50DBEE;
 }
 
 /*Middle Section*/
@@ -1912,7 +1917,6 @@ nav:hover a:not(:hover) {
     margin-top: 50px;
     font-family: 'Inter';
     font-weight: 500;
-
 }
 
 #footerRS{
