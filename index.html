@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dion Fernando</title>
 
     <link rel="icon" type="img/x-icon" href="assets/icons/Logo.png">
@@ -73,6 +74,11 @@
         <!--Logo-->
         <div>
             <img src="assets/icons/Logo.png" title="Logo" alt="Logo" width="55px">
+        </div>
+
+        <!--Menu Icon-->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <img src="assets/icons/menu.png" alt="Menu" width="50px">
         </div>
 
         <!--Navigation Menu-->
@@ -966,6 +972,25 @@
 
 
 <!-------------------------------------------------------------------------------->
+
+<!--Navigation Menu-->
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('show-menu');
+    }
+    // Close the menu after clicking an option
+    const navLinks = document.querySelectorAll('#nav-links a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const nav = document.getElementById('nav-links');
+            nav.classList.remove('show-menu');
+        });
+    });
+</script>
+
+
+
 <script>
     window.addEventListener('scroll', function() {
         var scrollPosition = window.pageYOffset;
