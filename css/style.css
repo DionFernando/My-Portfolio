@@ -1106,6 +1106,13 @@ nav:hover a:not(:hover) {
     border: 2px solid #00F0FF;
     border-radius: 30px;
     background: #09212F;
+
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 600;
 }
 .bgS {
     position: absolute;
