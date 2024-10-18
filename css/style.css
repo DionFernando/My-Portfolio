@@ -633,7 +633,7 @@ nav:hover a:not(:hover) {
     height: 610px;
     background: black;
 
-    z-index: -2;
+    z-index: 1;
 
     margin: 0;
     padding: 0;
@@ -727,7 +727,7 @@ nav:hover a:not(:hover) {
     position: relative;
     height: 1350px;
 
-    z-index: -2;
+    z-index: 1;
 
     background: linear-gradient(45deg,#01141C,#000000,#000000,#031C27);
 }
