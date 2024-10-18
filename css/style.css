@@ -959,8 +959,6 @@ nav:hover a:not(:hover) {
     margin: 0;
 }
 
-
-
 #progressSection>.prog>h3{
     font-size: 12px;
     font-family: Inter, Thin;
@@ -1032,75 +1030,65 @@ nav:hover a:not(:hover) {
 
 
 /*-------------------------Assignments-----------------------*/
-
-#assignmentsMain{
+#assignmentsMain {
     height: calc(100vh - 80px);
-    background: linear-gradient(#000000,#01141C,#01141C,#000000);
-
+    background: linear-gradient(#000000, #01141C, #01141C, #000000);
     position: relative;
-
     z-index: 1;
 }
 
-#asTopic{
+#asTopic {
     position: absolute;
-
     left: 100px;
     top: 200px;
-
     color: #50DBEE;
     text-align: right;
 }
 
-#asTopic>h1{
+#asTopic>h1 {
     font-family: 'Inter';
     font-weight: 800;
 }
 
-#asTopic>h4{
+#asTopic>h4 {
     color: white;
     font-family: 'Inter';
     font-weight: 400;
 }
 
-#asTopic>a>button{
+#asTopic>a>button {
     width: 100px;
     height: 30px;
     border-radius: 20px;
     border: 2px solid #00C2FF;
     background: rgba(21, 242, 242, 0.1);
-
     color: white;
-    font-size:10px;
+    font-size: 10px;
     font-family: 'Inter';
     font-weight: 300;
-
     margin-top: 50px;
 }
 
-
-#asTopic>a>button:hover{
+#asTopic>a>button:hover {
     background: #00C2FF;
     color: black;
     box-shadow: 0 0 20px #00C2FF;
 }
 
 /*assignment Categories*/
-#asCategories{
+#asCategories {
     width: 950px;
     height: 500px;
-
     position: relative;
     left: 350px;
     top: 70px;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
 }
 
-#asCategories>.asCatContainer{
+#asCategories>.asCatContainer {
     width: 200px;
     height: 200px;
     border: 2px solid #00F0FF;
@@ -1108,37 +1096,68 @@ nav:hover a:not(:hover) {
     background: #09212F;
 
     color: white;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    text-decoration: none;
     font-family: 'Inter';
     font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: transform 0.8s ease;
 }
+
+#asCategories>.asCatContainer:hover {
+    transform: rotateY(180deg);
+}
+
+/* Arrow image hidden by default */
+.asCatContainer img.arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    z-index: 1;
+}
+
+/* Show arrow on hover and hide text */
+.asCatContainer:hover span {
+    opacity: 0;
+}
+
+.asCatContainer:hover img.arrow {
+    opacity: 1;
+}
+
+/* Background squares */
 .bgS {
     position: absolute;
     left: 130px;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-
     z-index: -1;
 }
 
-.bgS:first-child{
+.bgS:first-child {
     margin-top: -20px;
 }
 
-.bgS:nth-child(2){
+.bgS:nth-child(2) {
     margin-top: 250px;
 }
 
-.bgS>.asBgSq{
+.bgS>.asBgSq {
     width: 200px;
     height: 200px;
     border-radius: 30px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
+
 
 
 
